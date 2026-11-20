@@ -1,0 +1,168 @@
+[11:41:59] INFO - ============================================================
+[11:41:59] INFO -  SYNCHRONISATION MASTER DATASET - 09/06/2026 11:41
+[11:41:59] INFO - ============================================================
+[11:41:59] INFO - Chargement de la base historique...
+[11:41:59] DEBUG - Utilisation du fichier CSV (plus rapide)
+[11:42:15] INFO - Master chargé : 173,796 lignes
+[11:42:15] INFO - 61 fichier(s) à intégrer :
+[11:42:15] DEBUG - [Resultat_course01012026.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:15] DEBUG -   ✓ Resultat_course01012026.xlsx (442 lignes)
+[11:42:15] DEBUG - [Resultat_course02042026.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:15] DEBUG -   ✓ Resultat_course02042026.xlsx (414 lignes)
+[11:42:16] DEBUG - [Resultat_course02102025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:16] DEBUG -   ✓ Resultat_course02102025.xlsx (669 lignes)
+[11:42:16] DEBUG - [Resultat_course04062026.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:16] DEBUG -   ✓ Resultat_course04062026.xlsx (594 lignes)
+[11:42:16] DEBUG - [Resultat_course04092025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:16] DEBUG -   ✓ Resultat_course04092025.xlsx (574 lignes)
+[11:42:16] DEBUG - [Resultat_course04122025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:16] DEBUG -   ✓ Resultat_course04122025.xlsx (663 lignes)
+[11:42:16] DEBUG - [Resultat_course05022026.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:16] DEBUG -   ✓ Resultat_course05022026.xlsx (542 lignes)
+[11:42:16] DEBUG - [Resultat_course05032026.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:16] DEBUG -   ✓ Resultat_course05032026.xlsx (609 lignes)
+[11:42:16] DEBUG - [Resultat_course05062025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:16] DEBUG -   ✓ Resultat_course05062025.xlsx (95 lignes)
+[11:42:16] DEBUG - [Resultat_course07052026.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:16] DEBUG -   ✓ Resultat_course07052026.xlsx (552 lignes)
+[11:42:17] DEBUG - [Resultat_course07082025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:17] DEBUG -   ✓ Resultat_course07082025.xlsx (538 lignes)
+[11:42:17] DEBUG - [Resultat_course08012026.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:17] DEBUG -   ✓ Resultat_course08012026.xlsx (354 lignes)
+[11:42:17] DEBUG - [Resultat_course08062025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:17] DEBUG -   ✓ Resultat_course08062025.xlsx (101 lignes)
+[11:42:17] DEBUG - [Resultat_course09062025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:17] DEBUG -   ✓ Resultat_course09062025.xlsx (91 lignes)
+[11:42:17] DEBUG - [Resultat_course10062025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:17] DEBUG -   ✓ Resultat_course10062025.xlsx (69 lignes)
+[11:42:17] DEBUG - [Resultat_course11062025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:17] DEBUG -   ✓ Resultat_course11062025.xlsx (114 lignes)
+[11:42:17] DEBUG - [Resultat_course11092025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:17] DEBUG -   ✓ Resultat_course11092025.xlsx (661 lignes)
+[11:42:17] DEBUG - [Resultat_course11122025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:17] DEBUG -   ✓ Resultat_course11122025.xlsx (703 lignes)
+[11:42:17] DEBUG - [Resultat_course12022026.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:17] DEBUG -   ✓ Resultat_course12022026.xlsx (677 lignes)
+[11:42:17] DEBUG - [Resultat_course12032026.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:17] DEBUG -   ✓ Resultat_course12032026.xlsx (651 lignes)
+[11:42:17] DEBUG - [Resultat_course12062025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:17] DEBUG -   ✓ Resultat_course12062025.xlsx (102 lignes)
+[11:42:18] DEBUG - [Resultat_course13062025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:18] DEBUG -   ✓ Resultat_course13062025.xlsx (92 lignes)
+[11:42:18] DEBUG - [Resultat_course13112025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:18] DEBUG -   ✓ Resultat_course13112025.xlsx (644 lignes)
+[11:42:18] DEBUG - [Resultat_course14052026.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:18] DEBUG -   ✓ Resultat_course14052026.xlsx (656 lignes)
+[11:42:18] DEBUG - [Resultat_course14082025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:18] DEBUG -   ✓ Resultat_course14082025.xlsx (353 lignes)
+[11:42:18] DEBUG - [Resultat_course15012026.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:18] DEBUG -   ✓ Resultat_course15012026.xlsx (668 lignes)
+[11:42:18] DEBUG - [Resultat_course15062025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:18] DEBUG -   ✓ Resultat_course15062025.xlsx (90 lignes)
+[11:42:18] DEBUG - [Resultat_course16042026.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:18] DEBUG -   ✓ Resultat_course16042026.xlsx (629 lignes)
+[11:42:18] DEBUG - [Resultat_course16062025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:18] DEBUG -   ✓ Resultat_course16062025.xlsx (80 lignes)
+[11:42:18] DEBUG - [Resultat_course17062025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:18] DEBUG -   ✓ Resultat_course17062025.xlsx (75 lignes)
+[11:42:18] DEBUG - [Resultat_course18062025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:18] DEBUG -   ✓ Resultat_course18062025.xlsx (114 lignes)
+[11:42:18] DEBUG - [Resultat_course18092025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:18] DEBUG -   ✓ Resultat_course18092025.xlsx (592 lignes)
+[11:42:19] DEBUG - [Resultat_course18122025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:19] DEBUG -   ✓ Resultat_course18122025.xlsx (523 lignes)
+[11:42:19] DEBUG - [Resultat_course19022026.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:19] DEBUG -   ✓ Resultat_course19022026.xlsx (683 lignes)
+[11:42:19] DEBUG - [Resultat_course19032026.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:19] DEBUG -   ✓ Resultat_course19032026.xlsx (673 lignes)
+[11:42:19] DEBUG - [Resultat_course19062025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:19] DEBUG -   ✓ Resultat_course19062025.xlsx (100 lignes)
+[11:42:19] DEBUG - [Resultat_course20062025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:19] DEBUG -   ✓ Resultat_course20062025.xlsx (106 lignes)
+[11:42:19] DEBUG - [Resultat_course20112025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:19] DEBUG -   ✓ Resultat_course20112025.xlsx (615 lignes)
+[11:42:19] DEBUG - [Resultat_course21052026.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:19] DEBUG -   ✓ Resultat_course21052026.xlsx (720 lignes)
+[11:42:19] DEBUG - [Resultat_course21062025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:19] DEBUG -   ✓ Resultat_course21062025.xlsx (16 lignes)
+[11:42:19] DEBUG - [Resultat_course21082025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:19] DEBUG -   ✓ Resultat_course21082025.xlsx (494 lignes)
+[11:42:20] DEBUG - [Resultat_course22012026.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:20] DEBUG -   ✓ Resultat_course22012026.xlsx (420 lignes)
+[11:42:20] DEBUG - [Resultat_course22052025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:20] DEBUG -   ✓ Resultat_course22052025.xlsx (109 lignes)
+[11:42:20] DEBUG - [Resultat_course22062025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:20] DEBUG -   ✓ Resultat_course22062025.xlsx (108 lignes)
+[11:42:20] DEBUG - [Resultat_course23042026.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:20] DEBUG -   ✓ Resultat_course23042026.xlsx (600 lignes)
+[11:42:20] DEBUG - [Resultat_course23052025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:20] DEBUG -   ✓ Resultat_course23052025.xlsx (94 lignes)
+[11:42:20] DEBUG - [Resultat_course23062025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:20] DEBUG -   ✓ Resultat_course23062025.xlsx (92 lignes)
+[11:42:20] DEBUG - [Resultat_course24072025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:20] DEBUG -   ✓ Resultat_course24072025.xlsx (396 lignes)
+[11:42:20] DEBUG - [Resultat_course25052025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:20] DEBUG -   ✓ Resultat_course25052025.xlsx (101 lignes)
+[11:42:20] DEBUG - [Resultat_course25092025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:20] DEBUG -   ✓ Resultat_course25092025.xlsx (664 lignes)
+[11:42:20] DEBUG - [Resultat_course25122025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:20] DEBUG -   ✓ Resultat_course25122025.xlsx (258 lignes)
+[11:42:20] DEBUG - [Resultat_course26022026.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:20] DEBUG -   ✓ Resultat_course26022026.xlsx (720 lignes)
+[11:42:20] DEBUG - [Resultat_course26052025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:20] DEBUG -   ✓ Resultat_course26052025.xlsx (94 lignes)
+[11:42:20] DEBUG - [Resultat_course27052025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:20] DEBUG -   ✓ Resultat_course27052025.xlsx (81 lignes)
+[11:42:21] DEBUG - [Resultat_course27112025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:21] DEBUG -   ✓ Resultat_course27112025.xlsx (659 lignes)
+[11:42:21] DEBUG - [Resultat_course28052026.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:21] DEBUG -   ✓ Resultat_course28052026.xlsx (525 lignes)
+[11:42:21] DEBUG - [Resultat_course28082025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:21] DEBUG -   ✓ Resultat_course28082025.xlsx (401 lignes)
+[11:42:21] DEBUG - [Resultat_course29012026.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:21] DEBUG -   ✓ Resultat_course29012026.xlsx (541 lignes)
+[11:42:21] DEBUG - [Resultat_course30042026.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:21] DEBUG -   ✓ Resultat_course30042026.xlsx (661 lignes)
+[11:42:21] DEBUG - [Resultat_course30102025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:21] DEBUG -   ✓ Resultat_course30102025.xlsx (606 lignes)
+[11:42:21] DEBUG - [Resultat_course31072025.xlsx] Colonnes optionnelles absentes (1) : ['PV_COURSE']
+[11:42:21] DEBUG -   ✓ Resultat_course31072025.xlsx (367 lignes)
+[11:42:21] INFO - Fichiers lus avec succès : 61/61
+[11:42:21] INFO - Consolidation et dédoublonnage...
+[11:42:23] INFO - Avant dédoublonnage : 198,431 lignes
+[11:42:23] INFO - Doublons supprimés  : 22,475
+[11:42:23] INFO - Nouvelles lignes     : 1,807
+[11:42:23] INFO - Cellules complétées  : 0
+[11:42:23] INFO - Backup créé : dataset_backup_20260609_114223.xlsx
+[11:44:17] INFO - Master Dataset sauvegardé : 175,603 lignes
+[11:44:19] INFO - CSV mis à jour : dataset.csv
+[11:44:19] INFO - ============================================================
+[11:44:19] INFO -   SYNCHRONISATION TERMINÉE
+[11:44:19] INFO -   Fichiers traités  : 61
+[11:44:19] INFO -   Fichiers archivés : 61/61
+[11:44:19] INFO -   Nouvelles lignes  : +1,807
+[11:44:19] INFO -   Doublons retirés  : 22,475
+[11:44:19] INFO -   Total final       : 175,603 lignes
+[11:44:19] INFO - ============================================================
+[11:44:19] INFO - ==================================================
+[11:44:19] INFO -   RAPPORT DATASET : 175,603 lignes | 33 colonnes
+[11:44:19] INFO -   Période : 2021-01-13 → 2026-06-04
+[11:44:19] INFO -   Chevaux uniques  : 9,932
+[11:44:19] INFO -   Jockeys uniques  : 650
+[11:44:19] INFO -   Entraîneurs      : 1,974
+[11:44:19] INFO -   Courses uniques  : 13,203
+[11:44:19] INFO -   Valeurs manquantes critiques : aucune
+[11:44:19] INFO -   Colonnes optionnelles incompletes :
+[11:44:19] INFO -     ID_PV_COURSE                        : 15,185 (  8.6%)
+[11:44:19] INFO -     CODE_CATEGORISATION_COURSE          : 26,089 ( 14.9%)
+[11:44:19] INFO -     CODE_ORIGINE_CHEVAL                 : 17,716 ( 10.1%)
+[11:44:19] INFO -     VH                                  : 64,385 ( 36.7%)
+[11:44:19] INFO -     CODE_TYPE_OEILLERE                  : 73,744 ( 42.0%)
+[11:44:19] INFO -     CORDE_DC                            : 58,443 ( 33.3%)
+[11:44:19] INFO -     NUMERO_PMU_DC                       : 15,185 (  8.6%)
+[11:44:19] INFO -     PLACE                               : 22,900 ( 13.0%)
+[11:44:19] INFO -     PV_COURSE                           : 16,992 (  9.7%)
+[11:44:19] INFO -     ID_JOCKEY_DC                        : 15,186 (  8.6%)
+[11:44:19] INFO -     POIDS_REEL                          : 15,185 (  8.6%)
+[11:44:19] INFO -     NOM_GRAND_PERE                      :     17 (  0.0%)
+[11:44:19] INFO - ==================================================

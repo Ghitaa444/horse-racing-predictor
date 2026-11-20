@@ -1,0 +1,10 @@
+[12:05:48] INFO - ============================================================
+[12:05:48] INFO -  RETRAINING HEBDOMADAIRE - 09/06/2026 12:05
+[12:05:48] INFO - ============================================================
+[12:05:48] INFO - Chargement du dataset : C:\Users\GELFINOU\Desktop\Projet_Sorec\data\dataset.xlsx
+[12:07:04] INFO - Brut : 175,603 lignes en 76.3s
+[12:07:04] INFO - Après filtrage PLACE : 149,854 lignes
+[12:07:05] INFO - Période : 2021-01-13 → 2026-06-04
+[12:07:05] INFO - Split : train=119,877 lignes (avant 2025-03-01) | test=29,977 lignes
+[12:07:05] INFO - Prétraitement train...
+[12:07:05] INFO - Feature engineering en cours...

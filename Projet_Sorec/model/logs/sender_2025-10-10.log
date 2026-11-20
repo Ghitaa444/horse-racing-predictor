@@ -1,0 +1,180 @@
+
+Mode détection activé
+
+Recherche des fichiers...
+Date cible (courses): 11/10/2025 (demain)
+Date historique (résultats): 09/10/2025 (veille)
+data/new_races/cours11102025.*
+data/new_races/course11102025.*
+data/new_races/courses_11102025.*
+data/new_races/*11102025*cours*.*
+data/new_races/*11102025*course*.*
+data/new_races/cours11_10_2025.*
+data/new_races/course11_10_2025.*
+data/new_races/courses_11_10_2025.*
+data/new_races/*11_10_2025*cours*.*
+data/new_races/*11_10_2025*course*.*
+data/new_races/cours20251011.*
+data/new_races/course20251011.*
+data/new_races/courses_20251011.*
+data/new_races/*20251011*cours*.*
+data/new_races/*20251011*course*.*
+data/new_races/cours2025_10_11.*
+data/new_races/course2025_10_11.*
+data/new_races/courses_2025_10_11.*
+data/new_races/*2025_10_11*cours*.*
+data/new_races/*2025_10_11*course*.*
+data/new_races/cours11-10-2025.*
+data/new_races/course11-10-2025.*
+data/new_races/courses_11-10-2025.*
+data/new_races/*11-10-2025*cours*.*
+data/new_races/*11-10-2025*course*.*
+data/new_races/cours2025-10-11.*
+data/new_races/course2025-10-11.*
+data/new_races/courses_2025-10-11.*
+data/new_races/*2025-10-11*cours*.*
+data/new_races/*2025-10-11*course*.*
+Fichiers courses trouvés: 1
+  - course11102025.CSV
+Aucun fichier de résultats de la veille trouvé
+
+Recherche par pattern de fichiers récents...
+Aucun fichier test trouvé
+Aucun fichier hist trouvé
+Aucun fichier hist_base trouvé
+
+Fichiers utilisés:
+  Base historique: data/dataset.xlsx
+  Résultats aujourd'hui: (aucun fichier - utilisation base seule)
+  Courses de demain: data/new-races/course11102025.CSV
+
+Aucun fichier de résultats récents - utilisation de la base historique seule
+
+====== HorseRacingSender adapté ======
+Date d'exécution: 2025-10-10 11:44:03
+Modèle et méta chargés — features attendues : 57
+Paramètres: SOFTMAX_EXP=8, MIN_PCT=0.4
+Colonnes disponibles dans le fichier de test:
+  0: id_course
+  1: hip
+  2: ID_SOCIETE_COURSE
+  3: date_course
+  4: CODE_CATEGORISATION_COURSE
+  5: CODE_CATEGORIE_COURSE
+  6: CODE_AGE_CHEVAL
+  7: CODE_CRITERE_SEXE
+  8: CODE_ORIGINE_CHEVAL
+  9: CODE_RACE_CHEVAL
+  10: CODE_CLASSIFICATION_COURSE
+  11: CODE_DISTANCE_COURSE
+  12: ID_CHEVAL
+  13: ID_JOCKEY
+  14: ID_PROPRIETAIRE
+  15: ID_ENTRAINEUR
+  16: ID_NAISSEUR
+  17: NUMERO_PMU_SEC
+  18: CORDE_SEC
+  19: VH
+  20: POIDS_CALCULE
+  21: CODE_TYPE_OEILLERE
+  22: NOM
+  23: NOM_MERE
+  24: NOM_PERE
+  25: NOM_GRAND_PERE
+  26: NUM_COURSE
+Colonne DATE_COURSE convertie en datetime
+Données chargées : 130,177 historiques + 117 test → 130,294
+Identifiants de courses identifiés: 10 courses uniques
+Feature engineering terminé - 94 colonnes disponibles
+Prédictions générées pour 130294 lignes
+Calcul des probabilités avec SOFTMAX_EXP=8
+
+Distribution des probabilités pour course 83398:
+  1. Prob: 6.17%
+  2. Prob: 6.16%
+  3. Prob: 6.13%
+  4. Prob: 6.12%
+  5. Prob: 6.06%
+
+Distribution des probabilités pour course 83775:
+  1. Prob: 6.90%
+  2. Prob: 6.70%
+  3. Prob: 6.70%
+  4. Prob: 6.69%
+  5. Prob: 6.65%
+
+Distribution des probabilités pour course 84277:
+  1. Prob: 8.86%
+  2. Prob: 7.51%
+  3. Prob: 7.28%
+  4. Prob: 7.27%
+  5. Prob: 7.27%
+
+Ajustement des cotes selon la nouvelle règle...
+
+Course 83398 - Ajustement de cotes:
+  Favori: cote originale 16.22 → nouvelle cote 1.10
+  Delta appliqué aux autres partants: 15.12
+  Cheval 2: cote originale 16.24 → nouvelle cote 1.20
+  Cheval 3: cote originale 16.30 → nouvelle cote 1.20
+  Cheval 4: cote originale 16.35 → nouvelle cote 1.23
+
+Course 83775 - Ajustement de cotes:
+  Favori: cote originale 14.49 → nouvelle cote 1.10
+  Delta appliqué aux autres partants: 13.39
+  Cheval 2: cote originale 14.92 → nouvelle cote 1.53
+  Cheval 3: cote originale 14.93 → nouvelle cote 1.54
+  Cheval 4: cote originale 14.94 → nouvelle cote 1.55
+
+Course 84277 - Ajustement de cotes:
+  Favori: cote originale 11.29 → nouvelle cote 1.10
+  Delta appliqué aux autres partants: 10.19
+  Cheval 2: cote originale 13.31 → nouvelle cote 3.12
+  Cheval 3: cote originale 13.74 → nouvelle cote 3.55
+  Cheval 4: cote originale 13.75 → nouvelle cote 3.56
+Cotes ajustées pour 11322 courses
+
+Distribution des cotes ajustées pour course 83398:
+  1. Prob: 6.17% -> Cote ajustée: 1.10
+  2. Prob: 6.16% -> Cote ajustée: 1.20
+  3. Prob: 6.13% -> Cote ajustée: 1.20
+  4. Prob: 6.12% -> Cote ajustée: 1.23
+  5. Prob: 6.06% -> Cote ajustée: 1.39
+
+Distribution des cotes ajustées pour course 83775:
+  1. Prob: 6.90% -> Cote ajustée: 1.10
+  2. Prob: 6.70% -> Cote ajustée: 1.53
+  3. Prob: 6.70% -> Cote ajustée: 1.54
+  4. Prob: 6.69% -> Cote ajustée: 1.55
+  5. Prob: 6.65% -> Cote ajustée: 1.64
+
+Distribution des cotes ajustées pour course 84277:
+  1. Prob: 8.86% -> Cote ajustée: 1.10
+  2. Prob: 7.51% -> Cote ajustée: 3.12
+  3. Prob: 7.28% -> Cote ajustée: 3.55
+  4. Prob: 7.27% -> Cote ajustée: 3.56
+  5. Prob: 7.27% -> Cote ajustée: 3.57
+Format de date correctement formaté
+Version française exportée: predictions_11_10_2025_fr.xlsx
+English version exported: predictions_11_10_2025_en.xlsx
+Détails des prédictions exportés: predictions_11_10_2025_details.xlsx
+
+Analyse des prédictions:
+Course 184520 - Top 3 probabilités: 45.04%, 11.21%, 8.05%
+Course 184521 - Top 3 probabilités: 17.11%, 13.79%, 10.93%
+Course 184522 - Top 3 probabilités: 12.69%, 12.67%, 12.64%
+Course 184523 - Top 3 probabilités: 14.52%, 14.09%, 13.99%
+Course 184524 - Top 3 probabilités: 15.64%, 9.85%, 9.74%
+Course 184525 - Top 3 probabilités: 56.99%, 5.97%, 5.36%
+Course 184526 - Top 3 probabilités: 40.36%, 21.82%, 12.82%
+Course 184527 - Top 3 probabilités: 12.93%, 12.85%, 12.24%
+Course 184808 - Top 3 probabilités: 15.88%, 14.41%, 13.96%
+Course 184809 - Top 3 probabilités: 7.06%, 6.97%, 6.85%
+Email envoyé à 7 destinataire(s): supgam@sorec.ma, exploitation@sorec.ma, programmes@sorec.ma, crc@sorec.ma, HBENABDESSELAM@sorec.ma, hasrar@sorec.ma, jfoudsi@sorec.ma avec 3 pièce(s) jointe(s)
+
+=======================================
+
+Prédictions générées avec succès:
+   predictions_11_10_2025_fr.xlsx
+   predictions_11_10_2025_en.xlsx
+   predictions_11_10_2025_details.xlsx

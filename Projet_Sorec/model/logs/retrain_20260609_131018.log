@@ -1,0 +1,42 @@
+[13:10:18] INFO - ============================================================
+[13:10:18] INFO -  RETRAINING HEBDOMADAIRE - 09/06/2026 13:10
+[13:10:18] INFO - ============================================================
+[13:10:18] INFO - Chargement du dataset : C:\Users\GELFINOU\Desktop\Projet_Sorec\data\dataset.csv
+[13:10:19] INFO - Brut : 175,603 lignes en 1.0s
+[13:10:20] INFO - Après filtrage PLACE : 149,854 lignes
+[13:10:20] INFO - Période : 2021-01-13 → 2026-06-04
+[13:10:20] INFO - Split : train=119,877 lignes (avant 2025-03-01) | test=29,977 lignes
+[13:10:20] INFO - Prétraitement train...
+[13:10:20] INFO - Feature engineering en cours...
+[13:14:00] INFO - Feature engineering terminé — 98 colonnes disponibles
+[13:14:00] INFO - Prétraitement test...
+[13:14:00] INFO - Feature engineering en cours...
+[13:15:00] INFO - Feature engineering terminé — 98 colonnes disponibles
+[13:15:00] INFO - Features sélectionnées : 61 (3 catégorielles)
+[13:15:01] INFO - Hyperparamètres de la semaine précédente chargés comme point de départ.
+[13:15:01] INFO - Recherche Optuna (50 trials)...
+[13:47:43] INFO - Meilleurs paramètres Optuna : RMSE=0.1663
+[13:47:43] INFO - {'boosting_type': 'gbdt', 'num_leaves': 178, 'learning_rate': 0.009107286488789642, 'feature_fraction': 0.6145448841662047, 'bagging_fraction': 0.8932181027766968, 'bagging_freq': 9, 'min_data_in_leaf': 199, 'lambda_l1': 0.7699862602704981, 'lambda_l2': 0.8781506636899832, 'max_depth': 5, 'min_gain_to_split': 0.04038070893856179, 'max_bin': 411}
+[13:47:43] INFO - Entraînement du modèle LightGBM...
+[13:47:52] INFO - Entraînement terminé — 995 arbres
+[13:47:52] INFO - 
+--- Métriques de régression ---
+[13:47:53] INFO - Métriques → RMSE=0.1642 | MAE=0.1175 | R²=0.1507 | Brier=0.2404
+[13:47:53] INFO - 
+--- Métriques hippiques ---
+[13:47:59] INFO -   Courses évaluées       : 2806
+[13:47:59] INFO -   Top-1 accuracy (favori): 28.0%
+[13:47:59] INFO -   Top-3 accuracy         : 59.2%
+[13:47:59] INFO -   Top-5 accuracy         : 77.7%
+[13:47:59] INFO -   Prob. moy. vainqueur   : 15.34%
+[13:47:59] INFO - RMSE : 0.1641 → 0.1642 (+0.0000)
+[13:47:59] INFO - Backup modèle créé : horse_racing_regressor_20260609_134759.lgb
+[13:47:59] INFO - Modèle sauvegardé : C:\Users\GELFINOU\Desktop\Projet_Sorec\model\models\horse_racing_regressor.lgb
+[13:48:00] INFO - Rapport sauvegardé : C:\Users\GELFINOU\Desktop\Projet_Sorec\model\reports\retrain_report_20260609.xlsx
+[13:48:00] INFO - Graphique sauvegardé : C:\Users\GELFINOU\Desktop\Projet_Sorec\model\reports\feature_importance_20260609.png
+[13:48:00] INFO - ============================================================
+[13:48:00] INFO -  RETRAINING TERMINÉ en 37.7 minutes
+[13:48:00] INFO -   RMSE     : 0.1642
+[13:48:00] INFO -   Top-1%%  : 28.01%%
+[13:48:00] INFO -   Top-3%%  : 59.23%%
+[13:48:00] INFO - ============================================================

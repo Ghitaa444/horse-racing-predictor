@@ -1,0 +1,978 @@
+[15:57:11] INFO - ============================================================
+[15:57:11] INFO -  SYNCHRONISATION MASTER DATASET - 08/06/2026 15:57
+[15:57:11] INFO - ============================================================
+[15:57:11] INFO - Chargement de la base historique...
+[15:58:26] INFO - Master chargé : 173,796 lignes
+[15:58:26] INFO - 323 fichier(s) à intégrer :
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course01022026.CSV
+[15:58:26] DEBUG - [course01022026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course01022026.CSV (78 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course01032026.CSV
+[15:58:26] DEBUG - [course01032026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course01032026.CSV (91 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course01042026.CSV
+[15:58:26] DEBUG - [course01042026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course01042026.CSV (70 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course01062025.CSV
+[15:58:26] DEBUG - [course01062025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course01062025.CSV (95 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course01072025.CSV
+[15:58:26] DEBUG - [course01072025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course01072025.CSV (95 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course01082025.CSV
+[15:58:26] DEBUG - [course01082025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course01082025.CSV (123 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course01092025.CSV
+[15:58:26] DEBUG - [course01092025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course01092025.CSV (90 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course01102025.CSV
+[15:58:26] DEBUG - [course01102025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course01102025.CSV (96 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course01112025.CSV
+[15:58:26] DEBUG - [course01112025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course01112025.CSV (119 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course01122025.CSV
+[15:58:26] DEBUG - [course01122025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course01122025.CSV (102 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course02012026.CSV
+[15:58:26] DEBUG - [course02012026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course02012026.CSV (83 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course02022026.CSV
+[15:58:26] DEBUG - [course02022026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course02022026.CSV (100 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course02032026.CSV
+[15:58:26] DEBUG - [course02032026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course02032026.CSV (87 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course02042026.CSV
+[15:58:26] DEBUG - [course02042026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course02042026.CSV (100 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course02052026.CSV
+[15:58:26] DEBUG - [course02052026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course02052026.CSV (110 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course02062025.CSV
+[15:58:26] DEBUG - [course02062025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course02062025.CSV (103 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course02082025.CSV
+[15:58:26] DEBUG - [course02082025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course02082025.CSV (105 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course02092025.CSV
+[15:58:26] DEBUG - [course02092025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course02092025.CSV (72 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course02102025.CSV
+[15:58:26] DEBUG - [course02102025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course02102025.CSV (97 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course02122025.CSV
+[15:58:26] DEBUG - [course02122025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course02122025.CSV (79 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course03012026.CSV
+[15:58:26] DEBUG - [course03012026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course03012026.CSV (89 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course03022026.CSV
+[15:58:26] DEBUG - [course03022026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course03022026.CSV (81 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course03032026.CSV
+[15:58:26] DEBUG - [course03032026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course03032026.CSV (79 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course03042026.CSV
+[15:58:26] DEBUG - [course03042026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course03042026.CSV (97 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course03052026.CSV
+[15:58:26] DEBUG - [course03052026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course03052026.CSV (90 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course03062025.CSV
+[15:58:26] DEBUG - [course03062025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course03062025.CSV (83 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course03072025.CSV
+[15:58:26] DEBUG - [course03072025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course03072025.CSV (95 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course03092025.CSV
+[15:58:26] DEBUG - [course03092025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course03092025.CSV (84 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course03102025.CSV
+[15:58:26] DEBUG - [course03102025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course03102025.CSV (92 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course03112025.CSV
+[15:58:26] DEBUG - [course03112025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course03112025.CSV (85 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course03122025.CSV
+[15:58:26] DEBUG - [course03122025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course03122025.CSV (89 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course04012026.CSV
+[15:58:26] DEBUG - [course04012026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course04012026.CSV (81 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course04022026.CSV
+[15:58:26] DEBUG - [course04022026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course04022026.CSV (82 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course04032026.CSV
+[15:58:26] DEBUG - [course04032026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course04032026.CSV (85 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course04042026.CSV
+[15:58:26] DEBUG - [course04042026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course04042026.CSV (104 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course04052026.CSV
+[15:58:26] DEBUG - [course04052026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course04052026.CSV (86 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course04062025.CSV
+[15:58:26] DEBUG - [course04062025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course04062025.CSV (101 lignes)
+[15:58:26] DEBUG - CSV lu avec encodage 'cp1252' : course04072025.CSV
+[15:58:26] DEBUG - [course04072025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:26] DEBUG -   ✓ course04072025.CSV (96 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course04082025.CSV
+[15:58:27] DEBUG - [course04082025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course04082025.CSV (112 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course04092025.CSV
+[15:58:27] DEBUG - [course04092025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course04092025.CSV (114 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course04102025.CSV
+[15:58:27] DEBUG - [course04102025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course04102025.CSV (106 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course04122025.CSV
+[15:58:27] DEBUG - [course04122025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course04122025.CSV (91 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course05012026.CSV
+[15:58:27] DEBUG - [course05012026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course05012026.CSV (85 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course05022026.CSV
+[15:58:27] DEBUG - [course05022026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course05022026.CSV (104 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course05032026.CSV
+[15:58:27] DEBUG - [course05032026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course05032026.CSV (86 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course05042026.CSV
+[15:58:27] DEBUG - [course05042026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course05042026.CSV (93 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course05052026.CSV
+[15:58:27] DEBUG - [course05052026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course05052026.CSV (79 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course05062025.CSV
+[15:58:27] DEBUG - [course05062025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course05062025.CSV (95 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course05072025.CSV
+[15:58:27] DEBUG - [course05072025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course05072025.CSV (91 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course05092025.CSV
+[15:58:27] DEBUG - [course05092025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course05092025.CSV (86 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course05102025.CSV
+[15:58:27] DEBUG - [course05102025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course05102025.CSV (87 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course05122025.CSV
+[15:58:27] DEBUG - [course05122025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course05122025.CSV (84 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course06012026.CSV
+[15:58:27] DEBUG - [course06012026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course06012026.CSV (77 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course06022026.CSV
+[15:58:27] DEBUG - [course06022026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course06022026.CSV (81 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course06032026.CSV
+[15:58:27] DEBUG - [course06032026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course06032026.CSV (77 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course06042026.CSV
+[15:58:27] DEBUG - [course06042026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course06042026.CSV (93 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course06052026.CSV
+[15:58:27] DEBUG - [course06052026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course06052026.CSV (90 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course06062025.CSV
+[15:58:27] DEBUG - [course06062025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course06062025.CSV (85 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course06082025.CSV
+[15:58:27] DEBUG - [course06082025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course06082025.CSV (93 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course06092025.CSV
+[15:58:27] DEBUG - [course06092025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course06092025.CSV (103 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course06102025.CSV
+[15:58:27] DEBUG - [course06102025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course06102025.CSV (88 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course06112025.CSV
+[15:58:27] DEBUG - [course06112025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course06112025.CSV (99 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course06122025.CSV
+[15:58:27] DEBUG - [course06122025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course06122025.CSV (118 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course07012026.CSV
+[15:58:27] DEBUG - [course07012026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course07012026.CSV (89 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course07022026.CSV
+[15:58:27] DEBUG - [course07022026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course07022026.CSV (81 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course07032026.CSV
+[15:58:27] DEBUG - [course07032026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course07032026.CSV (96 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course07042026.CSV
+[15:58:27] DEBUG - [course07042026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course07042026.CSV (90 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course07052026.CSV
+[15:58:27] DEBUG - [course07052026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course07052026.CSV (97 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course07072025.CSV
+[15:58:27] DEBUG - [course07072025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course07072025.CSV (91 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course07092025.CSV
+[15:58:27] DEBUG - [course07092025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course07092025.CSV (91 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course07102025.CSV
+[15:58:27] DEBUG - [course07102025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course07102025.CSV (74 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course07112025.CSV
+[15:58:27] DEBUG - [course07112025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course07112025.CSV (84 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course07122025.CSV
+[15:58:27] DEBUG - [course07122025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course07122025.CSV (97 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course08012026.CSV
+[15:58:27] DEBUG - [course08012026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course08012026.CSV (90 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course08022026.CSV
+[15:58:27] DEBUG - [course08022026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course08022026.CSV (93 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course08032026.CSV
+[15:58:27] DEBUG - [course08032026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course08032026.CSV (118 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course08042026.CSV
+[15:58:27] DEBUG - [course08042026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course08042026.CSV (121 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course08052026.CSV
+[15:58:27] DEBUG - [course08052026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course08052026.CSV (94 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course08062025.CSV
+[15:58:27] DEBUG - [course08062025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course08062025.CSV (101 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course08072025.CSV
+[15:58:27] DEBUG - [course08072025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course08072025.CSV (85 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course08082025.CSV
+[15:58:27] DEBUG - [course08082025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course08082025.CSV (107 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course08092025.CSV
+[15:58:27] DEBUG - [course08092025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course08092025.CSV (105 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course08102025.CSV
+[15:58:27] DEBUG - [course08102025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course08102025.CSV (85 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course08112025.CSV
+[15:58:27] DEBUG - [course08112025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course08112025.CSV (95 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course08122025.CSV
+[15:58:27] DEBUG - [course08122025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course08122025.CSV (99 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course09012026.CSV
+[15:58:27] DEBUG - [course09012026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course09012026.CSV (88 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course09022026.CSV
+[15:58:27] DEBUG - [course09022026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course09022026.CSV (114 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course09032026.CSV
+[15:58:27] DEBUG - [course09032026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course09032026.CSV (94 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course09042026.CSV
+[15:58:27] DEBUG - [course09042026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course09042026.CSV (93 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course09052026.CSV
+[15:58:27] DEBUG - [course09052026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course09052026.CSV (132 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course09062025.CSV
+[15:58:27] DEBUG - [course09062025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course09062025.CSV (91 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course09082025.CSV
+[15:58:27] DEBUG - [course09082025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course09082025.CSV (98 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course09092025.CSV
+[15:58:27] DEBUG - [course09092025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course09092025.CSV (74 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course09102025.CSV
+[15:58:27] DEBUG - [course09102025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course09102025.CSV (93 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course09122025.CSV
+[15:58:27] DEBUG - [course09122025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course09122025.CSV (91 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course10012026.CSV
+[15:58:27] DEBUG - [course10012026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course10012026.CSV (105 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course10022026.CSV
+[15:58:27] DEBUG - [course10022026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course10022026.CSV (82 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course10042026.CSV
+[15:58:27] DEBUG - [course10042026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course10042026.CSV (89 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course10052026.CSV
+[15:58:27] DEBUG - [course10052026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course10052026.CSV (87 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course10062025.CSV
+[15:58:27] DEBUG - [course10062025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course10062025.CSV (69 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course10092025.CSV
+[15:58:27] DEBUG - [course10092025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course10092025.CSV (104 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course10102025.CSV
+[15:58:27] DEBUG - [course10102025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course10102025.CSV (85 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course10122025.CSV
+[15:58:27] DEBUG - [course10122025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course10122025.CSV (90 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course11012026.CSV
+[15:58:27] DEBUG - [course11012026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course11012026.CSV (69 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course11022026.CSV
+[15:58:27] DEBUG - [course11022026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course11022026.CSV (104 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course11032026.CSV
+[15:58:27] DEBUG - [course11032026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course11032026.CSV (91 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course11052026.CSV
+[15:58:27] DEBUG - [course11052026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course11052026.CSV (73 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course11062025.CSV
+[15:58:27] DEBUG - [course11062025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course11062025.CSV (114 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course11072025.CSV
+[15:58:27] DEBUG - [course11072025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course11072025.CSV (109 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course11082025.CSV
+[15:58:27] DEBUG - [course11082025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course11082025.CSV (95 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course11092025.CSV
+[15:58:27] DEBUG - [course11092025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course11092025.CSV (98 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course11102025.CSV
+[15:58:27] DEBUG - [course11102025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course11102025.CSV (117 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course11122025.CSV
+[15:58:27] DEBUG - [course11122025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course11122025.CSV (97 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course12012026.CSV
+[15:58:27] DEBUG - [course12012026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course12012026.CSV (108 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course12022026.CSV
+[15:58:27] DEBUG - [course12022026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course12022026.CSV (90 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course12032026.CSV
+[15:58:27] DEBUG - [course12032026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course12032026.CSV (102 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course12042026.CSV
+[15:58:27] DEBUG - [course12042026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course12042026.CSV (92 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course12052026.CSV
+[15:58:27] DEBUG - [course12052026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course12052026.CSV (89 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course12062025.CSV
+[15:58:27] DEBUG - [course12062025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course12062025.CSV (102 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course12072025.CSV
+[15:58:27] DEBUG - [course12072025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course12072025.CSV (106 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course12082025.CSV
+[15:58:27] DEBUG - [course12082025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course12082025.CSV (75 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course12092025.CSV
+[15:58:27] DEBUG - [course12092025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course12092025.CSV (87 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course12102025.CSV
+[15:58:27] DEBUG - [course12102025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course12102025.CSV (82 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course12112025.CSV
+[15:58:27] DEBUG - [course12112025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course12112025.CSV (101 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course12122025.CSV
+[15:58:27] DEBUG - [course12122025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course12122025.CSV (106 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course13012026.CSV
+[15:58:27] DEBUG - [course13012026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course13012026.CSV (82 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course13022026.CSV
+[15:58:27] DEBUG - [course13022026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course13022026.CSV (89 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course13032026.CSV
+[15:58:27] DEBUG - [course13032026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course13032026.CSV (100 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course13042026.CSV
+[15:58:27] DEBUG - [course13042026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course13042026.CSV (99 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course13052026.CSV
+[15:58:27] DEBUG - [course13052026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course13052026.CSV (93 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course13062025.CSV
+[15:58:27] DEBUG - [course13062025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course13062025.CSV (92 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course13082025.CSV
+[15:58:27] DEBUG - [course13082025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course13082025.CSV (85 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course13092025.CSV
+[15:58:27] DEBUG - [course13092025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course13092025.CSV (116 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course13102025.CSV
+[15:58:27] DEBUG - [course13102025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course13102025.CSV (100 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course13112025.CSV
+[15:58:27] DEBUG - [course13112025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course13112025.CSV (92 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course13122025.CSV
+[15:58:27] DEBUG - [course13122025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course13122025.CSV (82 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course14012026.CSV
+[15:58:27] DEBUG - [course14012026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course14012026.CSV (109 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course14022026.CSV
+[15:58:27] DEBUG - [course14022026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course14022026.CSV (119 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course14032026.CSV
+[15:58:27] DEBUG - [course14032026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course14032026.CSV (123 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course14042026.CSV
+[15:58:27] DEBUG - [course14042026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course14042026.CSV (67 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course14052026.CSV
+[15:58:27] DEBUG - [course14052026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course14052026.CSV (88 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course14062025.CSV
+[15:58:27] DEBUG - [course14062025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course14062025.CSV (129 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course14072025.CSV
+[15:58:27] DEBUG - [course14072025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course14072025.CSV (102 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course14092025.CSV
+[15:58:27] DEBUG - [course14092025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course14092025.CSV (89 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course14102025.CSV
+[15:58:27] DEBUG - [course14102025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course14102025.CSV (72 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course14112025.CSV
+[15:58:27] DEBUG - [course14112025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course14112025.CSV (79 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course14122025.CSV
+[15:58:27] DEBUG - [course14122025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course14122025.CSV (97 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course15012026.CSV
+[15:58:27] DEBUG - [course15012026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course15012026.CSV (107 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course15022026.CSV
+[15:58:27] DEBUG - [course15022026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course15022026.CSV (94 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course15032026.CSV
+[15:58:27] DEBUG - [course15032026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:27] DEBUG -   ✓ course15032026.CSV (89 lignes)
+[15:58:27] DEBUG - CSV lu avec encodage 'cp1252' : course15042026.CSV
+[15:58:27] DEBUG - [course15042026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course15042026.CSV (96 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course15052026.CSV
+[15:58:28] DEBUG - [course15052026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course15052026.CSV (87 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course15062025.CSV
+[15:58:28] DEBUG - [course15062025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course15062025.CSV (90 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course15072025.CSV
+[15:58:28] DEBUG - [course15072025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course15072025.CSV (83 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course15082025.CSV
+[15:58:28] DEBUG - [course15082025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course15082025.CSV (99 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course15092025.CSV
+[15:58:28] DEBUG - [course15092025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course15092025.CSV (81 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course15102025.CSV
+[15:58:28] DEBUG - [course15102025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course15102025.CSV (93 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course15112025.CSV
+[15:58:28] DEBUG - [course15112025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course15112025.CSV (95 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course15122025.CSV
+[15:58:28] DEBUG - [course15122025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course15122025.CSV (94 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course16012026.CSV
+[15:58:28] DEBUG - [course16012026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course16012026.CSV (90 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course16022026.CSV
+[15:58:28] DEBUG - [course16022026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course16022026.CSV (109 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course16032026.CSV
+[15:58:28] DEBUG - [course16032026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course16032026.CSV (98 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course16042026.CSV
+[15:58:28] DEBUG - [course16042026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course16042026.CSV (88 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course16052026.CSV
+[15:58:28] DEBUG - [course16052026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course16052026.CSV (125 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course16062025.CSV
+[15:58:28] DEBUG - [course16062025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course16062025.CSV (80 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course16082025.CSV
+[15:58:28] DEBUG - [course16082025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course16082025.CSV (94 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course16092025.CSV
+[15:58:28] DEBUG - [course16092025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course16092025.CSV (77 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course16102025.CSV
+[15:58:28] DEBUG - [course16102025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course16102025.CSV (80 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course16112025.CSV
+[15:58:28] DEBUG - [course16112025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course16112025.CSV (97 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course16122025.CSV
+[15:58:28] DEBUG - [course16122025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course16122025.CSV (71 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course17012026.CSV
+[15:58:28] DEBUG - [course17012026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course17012026.CSV (106 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course17022026.CSV
+[15:58:28] DEBUG - [course17022026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course17022026.CSV (87 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course17032026.CSV
+[15:58:28] DEBUG - [course17032026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course17032026.CSV (92 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course17042026.CSV
+[15:58:28] DEBUG - [course17042026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course17042026.CSV (78 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course17052026.CSV
+[15:58:28] DEBUG - [course17052026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course17052026.CSV (81 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course17062025.CSV
+[15:58:28] DEBUG - [course17062025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course17062025.CSV (75 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course17092025.CSV
+[15:58:28] DEBUG - [course17092025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course17092025.CSV (85 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course17102025.CSV
+[15:58:28] DEBUG - [course17102025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course17102025.CSV (73 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course17112025.CSV
+[15:58:28] DEBUG - [course17112025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course17112025.CSV (86 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course17122025.CSV
+[15:58:28] DEBUG - [course17122025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course17122025.CSV (83 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course18012026.CSV
+[15:58:28] DEBUG - [course18012026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course18012026.CSV (81 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course18022026.CSV
+[15:58:28] DEBUG - [course18022026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course18022026.CSV (83 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course18032026.CSV
+[15:58:28] DEBUG - [course18032026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course18032026.CSV (99 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course18042026.CSV
+[15:58:28] DEBUG - [course18042026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course18042026.CSV (103 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course18052026.CSV
+[15:58:28] DEBUG - [course18052026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course18052026.CSV (88 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course18062025.CSV
+[15:58:28] DEBUG - [course18062025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course18062025.CSV (114 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course18072025.CSV
+[15:58:28] DEBUG - [course18072025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course18072025.CSV (103 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course18082025.CSV
+[15:58:28] DEBUG - [course18082025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course18082025.CSV (112 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course18092025.CSV
+[15:58:28] DEBUG - [course18092025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course18092025.CSV (97 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course18102025.CSV
+[15:58:28] DEBUG - [course18102025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course18102025.CSV (92 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course18112025.CSV
+[15:58:28] DEBUG - [course18112025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course18112025.CSV (90 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course18122025.CSV
+[15:58:28] DEBUG - [course18122025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course18122025.CSV (94 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course19012026.CSV
+[15:58:28] DEBUG - [course19012026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course19012026.CSV (95 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course19022026.CSV
+[15:58:28] DEBUG - [course19022026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course19022026.CSV (86 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course19032026.CSV
+[15:58:28] DEBUG - [course19032026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course19032026.CSV (72 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course19042026.CSV
+[15:58:28] DEBUG - [course19042026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course19042026.CSV (76 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course19052026.CSV
+[15:58:28] DEBUG - [course19052026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course19052026.CSV (93 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course19062025.CSV
+[15:58:28] DEBUG - [course19062025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course19062025.CSV (100 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course19072025.CSV
+[15:58:28] DEBUG - [course19072025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course19072025.CSV (102 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course19082025.CSV
+[15:58:28] DEBUG - [course19082025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course19082025.CSV (87 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course19092025.CSV
+[15:58:28] DEBUG - [course19092025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course19092025.CSV (90 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course19102025.CSV
+[15:58:28] DEBUG - [course19102025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course19102025.CSV (76 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course19112025.CSV
+[15:58:28] DEBUG - [course19112025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course19112025.CSV (78 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course19122025.CSV
+[15:58:28] DEBUG - [course19122025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course19122025.CSV (90 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course20012026.CSV
+[15:58:28] DEBUG - [course20012026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course20012026.CSV (92 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course20022026.CSV
+[15:58:28] DEBUG - [course20022026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course20022026.CSV (95 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course20042026.CSV
+[15:58:28] DEBUG - [course20042026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course20042026.CSV (90 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course20062025.CSV
+[15:58:28] DEBUG - [course20062025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course20062025.CSV (106 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course20082025.CSV
+[15:58:28] DEBUG - [course20082025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course20082025.CSV (102 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course20092025.CSV
+[15:58:28] DEBUG - [course20092025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course20092025.CSV (93 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course20102025.CSV
+[15:58:28] DEBUG - [course20102025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course20102025.CSV (105 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course20112025.CSV
+[15:58:28] DEBUG - [course20112025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course20112025.CSV (90 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course20122025.CSV
+[15:58:28] DEBUG - [course20122025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course20122025.CSV (80 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course21012026.CSV
+[15:58:28] DEBUG - [course21012026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course21012026.CSV (101 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course21022026.CSV
+[15:58:28] DEBUG - [course21022026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course21022026.CSV (100 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course21042026.CSV
+[15:58:28] DEBUG - [course21042026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course21042026.CSV (73 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course21062025.CSV
+[15:58:28] DEBUG - [course21062025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course21062025.CSV (121 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course21072025.CSV
+[15:58:28] DEBUG - [course21072025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course21072025.CSV (99 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course21092025.CSV
+[15:58:28] DEBUG - [course21092025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course21092025.CSV (107 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course21102025.CSV
+[15:58:28] DEBUG - [course21102025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course21102025.CSV (81 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course21112025.CSV
+[15:58:28] DEBUG - [course21112025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course21112025.CSV (81 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course21122025.CSV
+[15:58:28] DEBUG - [course21122025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course21122025.CSV (88 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course22012026.CSV
+[15:58:28] DEBUG - [course22012026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course22012026.CSV (91 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course22022026.CSV
+[15:58:28] DEBUG - [course22022026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course22022026.CSV (72 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course22032026.CSV
+[15:58:28] DEBUG - [course22032026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course22032026.CSV (94 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course22042026.CSV
+[15:58:28] DEBUG - [course22042026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course22042026.CSV (93 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course22062025.CSV
+[15:58:28] DEBUG - [course22062025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course22062025.CSV (108 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course22072025.CSV
+[15:58:28] DEBUG - [course22072025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course22072025.CSV (92 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course22082025.CSV
+[15:58:28] DEBUG - [course22082025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course22082025.CSV (96 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course22092025.CSV
+[15:58:28] DEBUG - [course22092025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course22092025.CSV (91 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course22102025.CSV
+[15:58:28] DEBUG - [course22102025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course22102025.CSV (88 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course22112025.CSV
+[15:58:28] DEBUG - [course22112025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course22112025.CSV (105 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course22122025.CSV
+[15:58:28] DEBUG - [course22122025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course22122025.CSV (91 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course23012026.CSV
+[15:58:28] DEBUG - [course23012026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course23012026.CSV (108 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course23022026.CSV
+[15:58:28] DEBUG - [course23022026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course23022026.CSV (84 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course23032026.CSV
+[15:58:28] DEBUG - [course23032026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course23032026.CSV (99 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course23042026.CSV
+[15:58:28] DEBUG - [course23042026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course23042026.CSV (94 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course23062025.CSV
+[15:58:28] DEBUG - [course23062025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course23062025.CSV (92 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course23082025.CSV
+[15:58:28] DEBUG - [course23082025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course23082025.CSV (103 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course23092025.CSV
+[15:58:28] DEBUG - [course23092025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course23092025.CSV (78 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course23102025.CSV
+[15:58:28] DEBUG - [course23102025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course23102025.CSV (121 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course23112025.CSV
+[15:58:28] DEBUG - [course23112025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course23112025.CSV (97 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course23122025.CSV
+[15:58:28] DEBUG - [course23122025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course23122025.CSV (79 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course24012026.CSV
+[15:58:28] DEBUG - [course24012026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course24012026.CSV (90 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course24022026.CSV
+[15:58:28] DEBUG - [course24022026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course24022026.CSV (83 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course24032026.CSV
+[15:58:28] DEBUG - [course24032026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course24032026.CSV (79 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course24042026.CSV
+[15:58:28] DEBUG - [course24042026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course24042026.CSV (78 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course24052025.CSV
+[15:58:28] DEBUG - [course24052025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course24052025.CSV (119 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course24062025.CSV
+[15:58:28] DEBUG - [course24062025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course24062025.CSV (72 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course24092025.CSV
+[15:58:28] DEBUG - [course24092025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course24092025.CSV (111 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course24102025.CSV
+[15:58:28] DEBUG - [course24102025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course24102025.CSV (86 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course24112025.CSV
+[15:58:28] DEBUG - [course24112025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course24112025.CSV (95 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course24122025.CSV
+[15:58:28] DEBUG - [course24122025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course24122025.CSV (88 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course25012026.CSV
+[15:58:28] DEBUG - [course25012026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course25012026.CSV (91 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course25022026.CSV
+[15:58:28] DEBUG - [course25022026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course25022026.CSV (95 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course25032026.CSV
+[15:58:28] DEBUG - [course25032026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course25032026.CSV (87 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course25042026.CSV
+[15:58:28] DEBUG - [course25042026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course25042026.CSV (110 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course25052025.CSV
+[15:58:28] DEBUG - [course25052025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course25052025.CSV (101 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course25062025.CSV
+[15:58:28] DEBUG - [course25062025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course25062025.CSV (91 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course25072025.CSV
+[15:58:28] DEBUG - [course25072025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course25072025.CSV (113 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course25082025.CSV
+[15:58:28] DEBUG - [course25082025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course25082025.CSV (91 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course25092025.CSV
+[15:58:28] DEBUG - [course25092025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:28] DEBUG -   ✓ course25092025.CSV (94 lignes)
+[15:58:28] DEBUG - CSV lu avec encodage 'cp1252' : course25102025.CSV
+[15:58:28] DEBUG - [course25102025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course25102025.CSV (97 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course25112025.CSV
+[15:58:29] DEBUG - [course25112025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course25112025.CSV (83 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course25122025.CSV
+[15:58:29] DEBUG - [course25122025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course25122025.CSV (82 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course26012026.CSV
+[15:58:29] DEBUG - [course26012026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course26012026.CSV (102 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course26022026.CSV
+[15:58:29] DEBUG - [course26022026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course26022026.CSV (91 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course26032026.CSV
+[15:58:29] DEBUG - [course26032026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course26032026.CSV (111 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course26042026.CSV
+[15:58:29] DEBUG - [course26042026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course26042026.CSV (97 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course26062025.CSV
+[15:58:29] DEBUG - [course26062025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course26062025.CSV (95 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course26072025.CSV
+[15:58:29] DEBUG - [course26072025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course26072025.CSV (88 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course26092025.CSV
+[15:58:29] DEBUG - [course26092025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course26092025.CSV (99 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course26102025.CSV
+[15:58:29] DEBUG - [course26102025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course26102025.CSV (95 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course26112025.CSV
+[15:58:29] DEBUG - [course26112025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course26112025.CSV (113 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course26122025.CSV
+[15:58:29] DEBUG - [course26122025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course26122025.CSV (94 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course27012026.CSV
+[15:58:29] DEBUG - [course27012026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course27012026.CSV (75 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course27022026.CSV
+[15:58:29] DEBUG - [course27022026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course27022026.CSV (82 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course27032026.CSV
+[15:58:29] DEBUG - [course27032026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course27032026.CSV (78 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course27042026.CSV
+[15:58:29] DEBUG - [course27042026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course27042026.CSV (90 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course27052025.CSV
+[15:58:29] DEBUG - [course27052025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course27052025.CSV (77 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course27062025.CSV
+[15:58:29] DEBUG - [course27062025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course27062025.CSV (72 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course27082025.CSV
+[15:58:29] DEBUG - [course27082025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course27082025.CSV (94 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course27092025.CSV
+[15:58:29] DEBUG - [course27092025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course27092025.CSV (104 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course27102025.CSV
+[15:58:29] DEBUG - [course27102025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course27102025.CSV (83 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course27112025.CSV
+[15:58:29] DEBUG - [course27112025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course27112025.CSV (85 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course27122025.CSV
+[15:58:29] DEBUG - [course27122025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course27122025.CSV (78 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course28012026.CSV
+[15:58:29] DEBUG - [course28012026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course28012026.CSV (104 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course28022026.CSV
+[15:58:29] DEBUG - [course28022026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course28022026.CSV (99 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course28032026.CSV
+[15:58:29] DEBUG - [course28032026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course28032026.CSV (125 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course28042026.CSV
+[15:58:29] DEBUG - [course28042026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course28042026.CSV (80 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course28052025.CSV
+[15:58:29] DEBUG - [course28052025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course28052025.CSV (96 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course28062025.CSV
+[15:58:29] DEBUG - [course28062025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course28062025.CSV (106 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course28072025.CSV
+[15:58:29] DEBUG - [course28072025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course28072025.CSV (75 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course28092025.CSV
+[15:58:29] DEBUG - [course28092025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course28092025.CSV (85 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course28102025.CSV
+[15:58:29] DEBUG - [course28102025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course28102025.CSV (73 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course28112025.CSV
+[15:58:29] DEBUG - [course28112025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course28112025.CSV (100 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course28122025.CSV
+[15:58:29] DEBUG - [course28122025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course28122025.CSV (107 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course29012026.CSV
+[15:58:29] DEBUG - [course29012026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course29012026.CSV (79 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course29032026.CSV
+[15:58:29] DEBUG - [course29032026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course29032026.CSV (97 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course29042026.CSV
+[15:58:29] DEBUG - [course29042026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course29042026.CSV (91 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course29052025.CSV
+[15:58:29] DEBUG - [course29052025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course29052025.CSV (96 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course29062025.CSV
+[15:58:29] DEBUG - [course29062025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course29062025.CSV (97 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course29072025.CSV
+[15:58:29] DEBUG - [course29072025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course29072025.CSV (91 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course29082025.CSV
+[15:58:29] DEBUG - [course29082025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course29082025.CSV (111 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course29092025.CSV
+[15:58:29] DEBUG - [course29092025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course29092025.CSV (82 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course29102025.CSV
+[15:58:29] DEBUG - [course29102025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course29102025.CSV (82 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course29112025.CSV
+[15:58:29] DEBUG - [course29112025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course29112025.CSV (109 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course29122025.CSV
+[15:58:29] DEBUG - [course29122025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course29122025.CSV (95 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course30012026.CSV
+[15:58:29] DEBUG - [course30012026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course30012026.CSV (93 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course30032026.CSV
+[15:58:29] DEBUG - [course30032026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course30032026.CSV (114 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course30042026.CSV
+[15:58:29] DEBUG - [course30042026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course30042026.CSV (115 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course30052025.CSV
+[15:58:29] DEBUG - [course30052025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course30052025.CSV (83 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course30062025.CSV
+[15:58:29] DEBUG - [course30062025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course30062025.CSV (85 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course30082025.CSV
+[15:58:29] DEBUG - [course30082025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course30082025.CSV (92 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course30092025.CSV
+[15:58:29] DEBUG - [course30092025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course30092025.CSV (88 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course30102025.CSV
+[15:58:29] DEBUG - [course30102025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course30102025.CSV (90 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course30112025.CSV
+[15:58:29] DEBUG - [course30112025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course30112025.CSV (93 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course30122025.CSV
+[15:58:29] DEBUG - [course30122025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course30122025.CSV (88 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course31012026.CSV
+[15:58:29] DEBUG - [course31012026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course31012026.CSV (106 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course31032026.CSV
+[15:58:29] DEBUG - [course31032026.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course31032026.CSV (81 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course31052025.CSV
+[15:58:29] DEBUG - [course31052025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course31052025.CSV (97 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course31102025.CSV
+[15:58:29] DEBUG - [course31102025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course31102025.CSV (88 lignes)
+[15:58:29] DEBUG - CSV lu avec encodage 'cp1252' : course31122025.CSV
+[15:58:29] DEBUG - [course31122025.CSV] Colonnes optionnelles absentes (7) : ['CORDE_DC', 'ID_JOCKEY_DC', 'ID_PV_COURSE', 'NUMERO_PMU_DC', 'PLACE', 'POIDS_REEL', 'PV_COURSE']
+[15:58:29] DEBUG -   ✓ course31122025.CSV (77 lignes)
+[15:58:29] INFO - Fichiers lus avec succès : 323/323
+[15:58:29] INFO - Consolidation et dédoublonnage...
+[15:58:31] ERROR - Erreur lors de la consolidation : invalid error value specified

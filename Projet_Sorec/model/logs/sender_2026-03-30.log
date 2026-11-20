@@ -1,0 +1,47 @@
+
+Mode détection activé
+
+Recherche des fichiers...
+Date cible (courses): 31/03/2026 (demain)
+Date historique (résultats): 29/03/2026 (veille)
+data/new_races/cours31032026.*
+data/new_races/course31032026.*
+data/new_races/courses_31032026.*
+data/new_races/*31032026*cours*.*
+data/new_races/*31032026*course*.*
+data/new_races/cours31_03_2026.*
+data/new_races/course31_03_2026.*
+data/new_races/courses_31_03_2026.*
+data/new_races/*31_03_2026*cours*.*
+data/new_races/*31_03_2026*course*.*
+data/new_races/cours20260331.*
+data/new_races/course20260331.*
+data/new_races/courses_20260331.*
+data/new_races/*20260331*cours*.*
+data/new_races/*20260331*course*.*
+data/new_races/cours2026_03_31.*
+data/new_races/course2026_03_31.*
+data/new_races/courses_2026_03_31.*
+data/new_races/*2026_03_31*cours*.*
+data/new_races/*2026_03_31*course*.*
+data/new_races/cours31-03-2026.*
+data/new_races/course31-03-2026.*
+data/new_races/courses_31-03-2026.*
+data/new_races/*31-03-2026*cours*.*
+data/new_races/*31-03-2026*course*.*
+data/new_races/cours2026-03-31.*
+data/new_races/course2026-03-31.*
+data/new_races/courses_2026-03-31.*
+data/new_races/*2026-03-31*cours*.*
+data/new_races/*2026-03-31*course*.*
+Aucun fichier de courses trouvé
+Aucun fichier de résultats de la veille trouvé
+
+Recherche par pattern de fichiers récents...
+Aucun fichier test trouvé
+Aucun fichier hist trouvé
+Aucun fichier hist_base trouvé
+
+Aucun fichier de test détecté. Recherche manuelle...
+ERREUR: Aucun fichier de courses trouvé. Veuillez placer le fichier dans le répertoire.
+Format attendu: cours[DATE_DEMAIN].csv (ex: cours16052025.csv)

@@ -1,0 +1,124 @@
+{% extends "dashboard/base.html" %}
+{# djlint:off #}
+{% block title %}Vue d'ensemble — SOREC{% endblock %}
+{% block topbar_title %}Vue d'ensemble{% endblock %}
+
+{% block content %}
+<div class="ph">
+  <div class="ph-e"><div class="ph-l"></div><span class="ph-t">Tableau de bord</span></div>
+  <div class="ph-h">Performance du système de prédiction</div>
+  <div class="ph-s">Modèle LightGBM · mise à jour hebdomadaire · données SOREC Maroc</div>
+</div>
+
+<div class="kg">
+  <div class="kc" style="--ka:#B8960C;">
+    <div class="kl">Top-1 Accuracy</div>
+    <div class="kn">{% if latest_metrics %}{{ latest_metrics.top1_pct|floatformat:1 }}%{% else %}—{% endif %}</div>
+    <div class="ks">Favori prédit = vainqueur</div>
+  </div>
+  <div class="kc" style="--ka:#1B3A5C;">
+    <div class="kl">Top-3 Accuracy</div>
+    <div class="kn">{% if latest_metrics %}{{ latest_metrics.top3_pct|floatformat:1 }}%{% else %}—{% endif %}</div>
+    <div class="ks">Vainqueur dans les 3 premiers</div>
+  </div>
+  <div class="kc" style="--ka:#111318;">
+    <div class="kl">Top-5 Accuracy</div>
+    <div class="kn">{% if latest_metrics %}{{ latest_metrics.top5_pct|floatformat:1 }}%{% else %}—{% endif %}</div>
+    <div class="ks">Vainqueur dans les 5 premiers</div>
+  </div>
+  <div class="kc" style="--ka:#6B7280;">
+    <div class="kl">R² Modèle</div>
+    <div class="kn">{% if latest_metrics %}{{ latest_metrics.r2|floatformat:3 }}{% else %}—{% endif %}</div>
+    <div class="ks">Régression LightGBM</div>
+  </div>
+  <div class="kc" style="--ka:#B8960C;">
+    <div class="kl">Courses analysées</div>
+    <div class="kn">{{ total_courses }}</div>
+    <div class="ks">Base de données</div>
+  </div>
+  <div class="kc" style="--ka:#9CA3AF;">
+    <div class="kl">Chevaux uniques</div>
+    <div class="kn">{{ total_chevaux }}</div>
+    <div class="ks">Identifiants ID_CHEVAL</div>
+  </div>
+</div>
+
+<div class="g2" style="margin-bottom:16px;">
+  <div class="pl">
+    <div class="ph2">
+      <div class="pt"><div class="ptb"></div><span class="ptt">Précision Top-N — 30 jours</span></div>
+      <div class="leg">
+        <span><span class="ld" style="background:#1B3A5C;"></span>Top-1</span>
+        <span><span class="ld" style="background:#B8960C;"></span>Top-3</span>
+        <span><span class="ld" style="background:#9CA3AF;border-top:1px dashed #9CA3AF;"></span>Top-5</span>
+      </div>
+    </div>
+    <div class="pb"><div class="cw" style="height:190px;"><canvas id="chAcc" role="img" aria-label="Évolution précision Top-1 Top-3 Top-5 sur 30 jours"></canvas></div></div>
+  </div>
+
+  <div class="pl">
+    <div class="ph2"><div class="pt"><div class="ptb"></div><span class="ptt">Résumé métriques</span></div></div>
+    <div class="pb">
+      {% if latest_metrics %}
+      <div class="mb"><span class="mbl">Top-1 Accuracy</span><div class="mbt"><div class="mbf" style="width:{{ latest_metrics.top1_pct|floatformat:0 }}%;background:#B8960C;"></div></div><span class="mbv">{{ latest_metrics.top1_pct|floatformat:1 }}%</span></div>
+      <div class="mb"><span class="mbl">Top-3 Accuracy</span><div class="mbt"><div class="mbf" style="width:{{ latest_metrics.top3_pct|floatformat:0 }}%;background:#1B3A5C;"></div></div><span class="mbv">{{ latest_metrics.top3_pct|floatformat:1 }}%</span></div>
+      <div class="mb"><span class="mbl">Top-5 Accuracy</span><div class="mbt"><div class="mbf" style="width:{{ latest_metrics.top5_pct|floatformat:0 }}%;background:#3A3F4A;"></div></div><span class="mbv">{{ latest_metrics.top5_pct|floatformat:1 }}%</span></div>
+      <div class="mb"><span class="mbl">Prob. vainqueur</span><div class="mbt"><div class="mbf" style="width:{{ latest_metrics.avg_winner_prob|floatformat:0 }}%;background:#9CA3AF;"></div></div><span class="mbv">{% if latest_metrics.avg_winner_prob %}{{ latest_metrics.avg_winner_prob|floatformat:1 }}%{% else %}—{% endif %}</span></div>
+      <div class="mb"><span class="mbl">R² Modèle</span><div class="mbt"><div class="mbf" style="width:{% widthratio latest_metrics.r2 1 100 %}%;background:#9CA3AF;"></div></div><span class="mbv">{{ latest_metrics.r2|floatformat:4 }}</span></div>
+      {% else %}
+      <div style="color:var(--ms);font-size:13px;padding:12px 0;">Aucune métrique disponible.</div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<div class="pl">
+  <div class="ph2">
+    <div class="pt"><div class="ptb"></div><span class="ptt">Courses récentes</span></div>
+    <a href="{% url 'dashboard:ranking' %}" class="gl">Voir le ranking →</a>
+  </div>
+  {% if recent_courses %}
+  <div class="pb0">
+    <table class="dt">
+      <thead><tr><th>ID Course</th><th>Date</th><th>Hippodrome</th><th>Discipline</th><th>Distance</th><th>Partants</th><th></th></tr></thead>
+      <tbody>
+        {% for course in recent_courses %}
+        <tr>
+          <td><span style="font-family:var(--fm);font-size:12px;">#{{ course.id_course }}</span></td>
+          <td>{{ course.date_course|date:"d/m/Y" }}</td>
+          <td>{{ course.code_hippodrome|default:"—" }}</td>
+          <td>{{ course.code_discipline|default:"—" }}</td>
+          <td>{{ course.distance|default:"—" }}{% if course.distance %}m{% endif %}</td>
+          <td>{{ course.nb_partants }}</td>
+          <td><a href="{% url 'dashboard:course_detail' course.id_course %}" class="gl">Détail →</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+  <div class="pb"><div class="empty"><p>Aucune course.<br>Importez via <code>import_data.py</code>.</p></div></div>
+  {% endif %}
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+const raw = {{ metrics_history|safe }};
+const C = SOREC; const tip = CHART_TIP;
+const grid = { color: C.grid };
+
+new Chart(document.getElementById('chAcc'), {
+  type:'line',
+  data:{ labels: raw.map(m=>m.date_evaluation), datasets:[
+    { label:'Top-1', data:raw.map(m=>m.top1_pct), borderColor:C.navy,  backgroundColor:'rgba(27,58,92,.07)', fill:true,  tension:.38, pointRadius:3, borderWidth:2 },
+    { label:'Top-3', data:raw.map(m=>m.top3_pct), borderColor:C.gold,  fill:false, tension:.38, pointRadius:2.5, borderWidth:2 },
+    { label:'Top-5', data:raw.map(m=>m.top5_pct), borderColor:C.ms,    fill:false, tension:.38, pointRadius:2,   borderWidth:1.5, borderDash:[5,3] },
+  ]},
+  options:{ responsive:true, maintainAspectRatio:false,
+    plugins:{ legend:{display:false}, tooltip:{...tip, callbacks:{label:c=>` ${c.dataset.label}: ${c.parsed.y?.toFixed(1)}%`}} },
+    scales:{ x:{grid, ticks:{maxTicksLimit:6}}, y:{grid, min:0, max:100, ticks:{callback:v=>v+'%'}} }
+  }
+});
+</script>
+{% endblock %}

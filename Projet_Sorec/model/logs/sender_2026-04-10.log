@@ -1,0 +1,80 @@
+
+Mode détection activé
+
+Recherche des fichiers...
+Date cible (courses): 11/04/2026 (demain)
+Date historique (résultats): 09/04/2026 (veille)
+data/new_races/cours11042026.*
+data/new_races/course11042026.*
+data/new_races/courses_11042026.*
+data/new_races/*11042026*cours*.*
+data/new_races/*11042026*course*.*
+data/new_races/cours11_04_2026.*
+data/new_races/course11_04_2026.*
+data/new_races/courses_11_04_2026.*
+data/new_races/*11_04_2026*cours*.*
+data/new_races/*11_04_2026*course*.*
+data/new_races/cours20260411.*
+data/new_races/course20260411.*
+data/new_races/courses_20260411.*
+data/new_races/*20260411*cours*.*
+data/new_races/*20260411*course*.*
+data/new_races/cours2026_04_11.*
+data/new_races/course2026_04_11.*
+data/new_races/courses_2026_04_11.*
+data/new_races/*2026_04_11*cours*.*
+data/new_races/*2026_04_11*course*.*
+data/new_races/cours11-04-2026.*
+data/new_races/course11-04-2026.*
+data/new_races/courses_11-04-2026.*
+data/new_races/*11-04-2026*cours*.*
+data/new_races/*11-04-2026*course*.*
+data/new_races/cours2026-04-11.*
+data/new_races/course2026-04-11.*
+data/new_races/courses_2026-04-11.*
+data/new_races/*2026-04-11*cours*.*
+data/new_races/*2026-04-11*course*.*
+Fichiers courses trouvés: 1
+  - course11042026.CSV
+Aucun fichier de résultats de la veille trouvé
+
+Recherche par pattern de fichiers récents...
+Aucun fichier test trouvé
+Aucun fichier hist trouvé
+Aucun fichier hist_base trouvé
+
+Fichiers utilisés:
+  Base historique: data/dataset.xlsx
+  Résultats aujourd'hui: (aucun fichier - utilisation base seule)
+  Courses de demain: data/new-races/course11042026.CSV
+
+Aucun fichier de résultats récents - utilisation de la base historique seule
+
+====== HorseRacingSender adapté ======
+Date d'exécution: 2026-04-10 12:44:05
+Modèle et méta chargés — features attendues : 57
+Paramètres: SOFTMAX_EXP=8, MIN_PCT=0.4
+
+❌ Une erreur s'est produite: No columns to parse from file
+Traceback (most recent call last):
+  File "/home/oamaoun/ai-sorec-lab/model/sender.py", line 832, in run_prediction
+    sender.load_data(hist_path, test_path)
+  File "/home/oamaoun/ai-sorec-lab/model/sender.py", line 265, in load_data
+    else pd.read_csv(test_path, delimiter=";", low_memory=False)
+  File "/home/oamaoun/.local/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/oamaoun/.local/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/oamaoun/.local/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/oamaoun/.local/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+  File "/home/oamaoun/.local/lib/python3.9/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+
+
+=======================================
+
+Echec de la génération des prédictions

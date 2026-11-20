@@ -1,0 +1,29 @@
+[12:29:08] INFO - ============================================================
+[12:29:08] INFO -  SYNCHRONISATION MASTER DATASET - 08/06/2026 12:29
+[12:29:08] INFO -   ⚠  MODE DRY-RUN : aucun fichier ne sera modifié
+[12:29:08] INFO - ============================================================
+[12:29:08] INFO - Chargement de la base historique...
+[12:30:20] INFO - Master chargé : 173,796 lignes
+[12:30:20] INFO - Statut : Aucun nouveau fichier à traiter. Master Dataset déjà à jour.
+[12:30:20] INFO - ==================================================
+[12:30:20] INFO -   RAPPORT DATASET : 173,796 lignes | 33 colonnes
+[12:30:20] INFO -   Période : 2021-01-13 → 2026-05-19
+[12:30:20] INFO -   Chevaux uniques  : 9,894
+[12:30:20] INFO -   Jockeys uniques  : 506
+[12:30:20] INFO -   Entraîneurs      : 1,538
+[12:30:20] INFO -   Courses uniques  : 13,038
+[12:30:20] INFO -   Valeurs manquantes critiques : aucune
+[12:30:20] INFO -   Colonnes optionnelles incompletes :
+[12:30:20] INFO -     ID_PV_COURSE                        : 15,185 (  8.7%)
+[12:30:20] INFO -     CODE_CATEGORISATION_COURSE          : 25,835 ( 14.9%)
+[12:30:20] INFO -     CODE_ORIGINE_CHEVAL                 : 17,538 ( 10.1%)
+[12:30:20] INFO -     VH                                  : 64,385 ( 37.0%)
+[12:30:20] INFO -     CODE_TYPE_OEILLERE                  : 72,993 ( 42.0%)
+[12:30:20] INFO -     CORDE_DC                            : 58,443 ( 33.6%)
+[12:30:20] INFO -     NUMERO_PMU_DC                       : 15,185 (  8.7%)
+[12:30:20] INFO -     PLACE                               : 22,900 ( 13.2%)
+[12:30:20] INFO -     PV_COURSE                           : 15,185 (  8.7%)
+[12:30:20] INFO -     ID_JOCKEY_DC                        : 15,186 (  8.7%)
+[12:30:20] INFO -     POIDS_REEL                          : 15,185 (  8.7%)
+[12:30:20] INFO -     NOM_GRAND_PERE                      :     17 (  0.0%)
+[12:30:20] INFO - ==================================================

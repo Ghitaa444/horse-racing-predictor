@@ -1,0 +1,187 @@
+{% extends "dashboard/base.html" %}
+{# djlint:off #}
+{% block title %}Course #{{ course.id_course }} — SOREC{% endblock %}
+{% block topbar_title %}Détail — Course #{{ course.id_course }}{% endblock %}
+
+{% block content %}
+
+<!-- Header -->
+<div class="ph">
+  <div class="ph-e"><div class="ph-l"></div><span class="ph-t">Détail course</span></div>
+  <div class="ph-h">Course #{{ course.id_course }}</div>
+  <div style="display:flex;align-items:center;gap:14px;margin-top:8px;flex-wrap:wrap;">
+    {% if course.date_course %}
+    <span style="font-size:12.5px;color:var(--st);">{{ course.date_course|date:"l d F Y" }}</span>
+    {% endif %}
+    {% if course.code_hippodrome %}
+    <span style="padding:2px 8px;background:var(--fg);border:1px solid var(--sm);font-size:10.5px;font-weight:600;color:var(--ink3);">{{ course.code_hippodrome }}</span>
+    {% endif %}
+    {% if course.distance %}
+    <span style="font-size:12px;color:var(--st);">{{ course.distance }} m</span>
+    {% endif %}
+    <span style="font-size:12px;color:var(--st);">{{ course.nb_partants }} partants</span>
+    {% if correct_top1 %}
+    <span class="bge bok" style="margin-left:auto;">✓ Top-1 correct</span>
+    {% elif correct_top3 %}
+    <span class="bge bwa" style="margin-left:auto;">≈ Top-3</span>
+    {% else %}
+    <span class="bge ber" style="margin-left:auto;">✗ Favori raté</span>
+    {% endif %}
+  </div>
+</div>
+
+<!-- Comparaison Top 5 -->
+<div class="pl" style="margin-bottom:16px;">
+  <div class="ph2">
+    <div class="pt"><div class="ptb"></div><span class="ptt">Comparaison Top 5</span></div>
+  </div>
+  <div class="race">
+
+    <!-- RÉEL -->
+    <div class="rc">
+      <div class="rch" style="color:var(--okm);">
+        <svg width="10" height="10" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+        Classement officiel
+      </div>
+      {% if top5_reel %}
+        {% for p in top5_reel %}
+        <div class="hr">
+          <span class="rk {% if p.place_reel == 1 %}r1{% elif p.place_reel == 2 %}r2{% elif p.place_reel == 3 %}r3{% else %}rn{% endif %}">
+            {{ p.place_reel }}
+          </span>
+          <div style="flex:1;min-width:0;">
+            <div class="hn">{{ p.cheval.nom|default:"—" }}</div>
+            {% if p.numero_pmu %}<div class="hpmu">PMU {{ p.numero_pmu }}</div>{% endif %}
+          </div>
+          {% if p.proba_victoire %}
+          <div class="pbar">
+            <div class="pt2"><div class="pf" style="width:{{ p.proba_victoire|floatformat:0 }}%;background:var(--navy);"></div></div>
+            <span class="pv">{{ p.proba_victoire|floatformat:1 }}%</span>
+          </div>
+          {% endif %}
+          {% if p.cote %}<span style="font-family:var(--fm);font-size:11px;color:var(--st);margin-left:8px;">{{ p.cote|floatformat:2 }}</span>{% endif %}
+        </div>
+        {% endfor %}
+      {% else %}
+        <div style="padding:16px 0;color:var(--ms);font-size:12.5px;font-style:italic;">Résultats non disponibles</div>
+      {% endif %}
+    </div>
+
+    <!-- PRÉDIT -->
+    <div class="rc">
+      <div class="rch" style="color:var(--navy);">
+        <svg width="10" height="10" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4"/></svg>
+        Prédiction LightGBM
+      </div>
+      {% if top5_predit %}
+        {% for p in top5_predit %}
+        {% with forloop.counter as rg %}
+        <div class="hr">
+          <span class="rk {% if rg == 1 %}r1{% elif rg == 2 %}r2{% elif rg == 3 %}r3{% else %}rn{% endif %}">{{ rg }}</span>
+          <div style="flex:1;min-width:0;">
+            <div style="display:flex;align-items:center;gap:5px;flex-wrap:wrap;">
+              <span class="hn">{{ p.cheval.nom|default:"—" }}</span>
+              {% if p.place_reel == 1 %}
+                <span class="bge bok" style="font-size:9px;padding:1px 5px;">✓ Gagnant</span>
+              {% elif p.place_reel %}
+                <span class="bge bnu" style="font-size:9px;padding:1px 5px;">P{{ p.place_reel }}</span>
+              {% endif %}
+            </div>
+            {% if p.numero_pmu %}<div class="hpmu">PMU {{ p.numero_pmu }}</div>{% endif %}
+          </div>
+          <div class="pbar">
+            <div class="pt2">
+              <div class="pf" style="width:{{ p.proba_victoire|floatformat:0 }}%;{% if rg == 1 %}background:var(--navy);{% elif rg == 2 %}background:var(--g);{% else %}background:var(--ms);{% endif %}"></div>
+            </div>
+            <span class="pv">{{ p.proba_victoire|floatformat:1 }}%</span>
+          </div>
+          {% if p.cote %}<span style="font-family:var(--fm);font-size:11px;color:var(--st);margin-left:8px;">{{ p.cote|floatformat:2 }}</span>{% endif %}
+        </div>
+        {% endwith %}
+        {% endfor %}
+      {% else %}
+        <div style="padding:16px 0;color:var(--ms);font-size:12.5px;font-style:italic;">Aucune prédiction</div>
+      {% endif %}
+    </div>
+
+  </div>
+</div>
+
+<!-- Tous les partants -->
+<div class="pl">
+  <div class="ph2">
+    <div class="pt"><div class="ptb"></div><span class="ptt">Tous les partants</span></div>
+    <span style="font-size:11.5px;color:var(--st);">{{ participations|length }} chevaux</span>
+  </div>
+  {% if participations %}
+  <div class="pb0">
+    <table class="dt">
+      <thead>
+        <tr>
+          <th>Place réelle</th>
+          <th>Rang prédit</th>
+          <th>Cheval</th>
+          <th>PMU</th>
+          <th>Jockey</th>
+          <th>Prob. victoire</th>
+          <th>Cote</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for p in participations %}
+        <tr>
+          <td>
+            {% if p.place_reel %}
+            <span class="rk {% if p.place_reel == 1 %}r1{% elif p.place_reel == 2 %}r2{% elif p.place_reel == 3 %}r3{% else %}rn{% endif %}" style="font-size:12px;">
+              {{ p.place_reel }}
+            </span>
+            {% else %}
+            <span style="color:var(--ms);">—</span>
+            {% endif %}
+          </td>
+          <td>
+            {% if p.place_predit %}
+            <span class="rk {% if p.place_predit == 1 %}r1{% elif p.place_predit == 2 %}r2{% elif p.place_predit == 3 %}r3{% else %}rn{% endif %}" style="font-size:12px;border-style:dashed;">
+              {{ p.place_predit }}
+            </span>
+            {% else %}
+            <span style="color:var(--ms);">—</span>
+            {% endif %}
+          </td>
+          <td>
+            <div style="font-weight:600;color:var(--ink);">{{ p.cheval.nom|default:"—" }}</div>
+          </td>
+          <td>
+            <span style="font-family:var(--fm);font-size:11.5px;color:var(--st);">{{ p.numero_pmu|default:"—" }}</span>
+          </td>
+          <td>
+            <span style="font-family:var(--fm);font-size:11.5px;color:var(--st);">{{ p.id_jockey|default:"—" }}</span>
+          </td>
+          <td>
+            {% if p.proba_victoire %}
+            <div class="pbar" style="width:120px;">
+              <div class="pt2"><div class="pf" style="width:{{ p.proba_victoire|floatformat:0 }}%;background:var(--navy);"></div></div>
+              <span class="pv">{{ p.proba_victoire|floatformat:1 }}%</span>
+            </div>
+            {% else %}
+            <span style="color:var(--ms);">—</span>
+            {% endif %}
+          </td>
+          <td>
+            <span style="font-family:var(--fm);font-size:12px;font-weight:600;color:var(--ink);">{{ p.cote|floatformat:2|default:"—" }}</span>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+  <div class="pb"><div class="empty"><p>Aucun partant enregistré.</p></div></div>
+  {% endif %}
+</div>
+
+<div style="margin-top:8px;">
+  <a href="{% url 'dashboard:ranking' %}" class="gl">← Retour au ranking</a>
+</div>
+
+{% endblock %}

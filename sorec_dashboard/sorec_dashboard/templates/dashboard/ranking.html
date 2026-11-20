@@ -1,0 +1,119 @@
+{% extends "dashboard/base.html" %}
+{# djlint:off #}
+{% block title %}Ranking — SOREC{% endblock %}
+{% block topbar_title %}Ranking des courses{% endblock %}
+
+{% block content %}
+<div class="ph">
+  <div class="ph-e"><div class="ph-l"></div><span class="ph-t">Comparaison</span></div>
+  <div class="ph-h">Classement réel vs Prédiction du modèle</div>
+  <div class="ph-s">Top 5 chevaux par course · Probabilités LightGBM · Softmax T=8</div>
+</div>
+
+<div class="pl" style="margin-bottom:16px;">
+  <div class="pb" style="padding:14px 20px;">
+    <form method="get" style="display:flex;gap:14px;align-items:flex-end;flex-wrap:wrap;">
+      <div><div class="fl">Date</div><input type="date" name="date" value="{{ selected_date }}" class="fi"></div>
+      <div>
+        <div class="fl">Hippodrome</div>
+        <select name="hippodrome" class="fi">
+          <option value="">Tous les hippodromes</option>
+          {% for hip in hippodromes %}<option value="{{ hip }}" {% if hip == selected_hippodrome %}selected{% endif %}>{{ hip }}</option>{% endfor %}
+        </select>
+      </div>
+      <button type="submit" class="fbtn">Filtrer</button>
+      {% if selected_date or selected_hippodrome %}
+      <a href="{% url 'dashboard:ranking' %}" class="gl" style="padding:8px 0;font-size:12px;">✕ Réinitialiser</a>
+      {% endif %}
+    </form>
+  </div>
+</div>
+
+{% if comparisons %}
+  {% for comp in comparisons %}
+  <div class="pl" style="margin-bottom:16px;">
+    <div class="ph2">
+      <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+        <div class="pt">
+          <div class="ptb"></div>
+          <span style="font-family:var(--fm);font-size:12.5px;font-weight:500;color:var(--ink);">#{{ comp.course.id_course }}</span>
+        </div>
+        <span style="font-size:11.5px;color:var(--st);">{{ comp.course.date_course|date:"d/m/Y" }}</span>
+        {% if comp.course.code_hippodrome %}<span style="padding:2px 7px;background:var(--fg);border:1px solid var(--sm);font-size:10.5px;font-weight:600;color:var(--ink3);">{{ comp.course.code_hippodrome }}</span>{% endif %}
+        {% if comp.course.distance %}<span style="font-size:11.5px;color:var(--st);">{{ comp.course.distance }} m</span>{% endif %}
+        {% if comp.course.nb_partants %}<span style="font-size:11.5px;color:var(--st);">{{ comp.course.nb_partants }} partants</span>{% endif %}
+      </div>
+      {% if comp.accuracy %}
+        {% if comp.accuracy.top1 %}<span class="bge bok">✓ Favori correct</span>
+        {% elif comp.accuracy.top3 %}<span class="bge bwa">≈ Top 3</span>
+        {% else %}<span class="bge ber">✗ Raté</span>{% endif %}
+      {% endif %}
+    </div>
+
+    <div class="race">
+      <!-- RÉEL -->
+      <div class="rc">
+        <div class="rch" style="color:var(--okm);">
+          <svg width="10" height="10" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          Classement officiel
+        </div>
+        {% if comp.top5_reel %}
+          {% for h in comp.top5_reel %}
+          <div class="hr">
+            <span class="rk {% if h.place_reel == 1 %}r1{% elif h.place_reel == 2 %}r2{% elif h.place_reel == 3 %}r3{% else %}rn{% endif %}">{{ h.place_reel }}</span>
+            <div style="flex:1;min-width:0;"><div class="hn">{{ h.cheval__nom|default:"—" }}</div>{% if h.numero_pmu %}<div class="hpmu">PMU {{ h.numero_pmu }}</div>{% endif %}</div>
+            {% if h.cote %}<span style="font-family:var(--fm);font-size:11px;color:var(--st);">{{ h.cote|floatformat:2 }}</span>{% endif %}
+          </div>
+          {% endfor %}
+        {% else %}
+          <div style="padding:16px 0;color:var(--ms);font-size:12.5px;font-style:italic;">Résultats non disponibles</div>
+        {% endif %}
+      </div>
+
+      <!-- PRÉDIT -->
+      <div class="rc">
+        <div class="rch" style="color:var(--navy);">
+          <svg width="10" height="10" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4"/></svg>
+          Prédiction LightGBM
+        </div>
+        {% if comp.top5_predit %}
+          {% for h in comp.top5_predit %}{% with forloop.counter as rg %}
+          <div class="hr">
+            <span class="rk {% if rg == 1 %}r1{% elif rg == 2 %}r2{% elif rg == 3 %}r3{% else %}rn{% endif %}">{{ rg }}</span>
+            <div style="flex:1;min-width:0;">
+              <div style="display:flex;align-items:center;gap:5px;flex-wrap:wrap;">
+                <span class="hn">{{ h.cheval__nom|default:"—" }}</span>
+                {% for reel in comp.top5_reel %}{% if reel.cheval__nom == h.cheval__nom %}
+                  {% if reel.place_reel == 1 %}<span class="bge bok" style="font-size:9px;padding:1px 5px;">✓ Gagnant</span>
+                  {% elif reel.place_reel <= 3 %}<span class="bge bwa" style="font-size:9px;padding:1px 5px;">P{{ reel.place_reel }}</span>
+                  {% else %}<span class="bge bnu" style="font-size:9px;padding:1px 5px;">P{{ reel.place_reel }}</span>{% endif %}
+                {% endif %}{% endfor %}
+              </div>
+              {% if h.numero_pmu %}<div class="hpmu">PMU {{ h.numero_pmu }}</div>{% endif %}
+            </div>
+            <div class="pbar">
+              <div class="pt2"><div class="pf" style="width:{{ h.proba_victoire|floatformat:0 }}%;{% if rg == 1 %}background:var(--navy);{% elif rg == 2 %}background:var(--g);{% else %}background:var(--ms);{% endif %}"></div></div>
+              <span class="pv">{{ h.proba_victoire|floatformat:1 }}%</span>
+            </div>
+          </div>
+          {% endwith %}{% endfor %}
+        {% else %}
+          <div style="padding:16px 0;color:var(--ms);font-size:12.5px;font-style:italic;">Aucune prédiction</div>
+        {% endif %}
+      </div>
+    </div>
+
+    {% if comp.accuracy and comp.accuracy.overlap_pct is not None %}
+    <div class="rfoot">
+      <span class="ov-l">Chevauchement Top-5</span>
+      <div class="ov-t"><div class="ov-f" style="width:{{ comp.accuracy.overlap_pct }}%;background:{% if comp.accuracy.overlap_pct >= 60 %}var(--okm){% elif comp.accuracy.overlap_pct >= 40 %}var(--g){% else %}var(--erm){% endif %};"></div></div>
+      <span class="ov-v" style="color:{% if comp.accuracy.overlap_pct >= 60 %}var(--okm){% elif comp.accuracy.overlap_pct >= 40 %}var(--g){% else %}var(--erm){% endif %};">{{ comp.accuracy.overlap_pct }}%</span>
+      <a href="{% url 'dashboard:course_detail' comp.course.id_course %}" class="gl" style="margin-left:auto;">Détail complet →</a>
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+{% else %}
+  <div class="pl"><div class="pb"><div class="empty"><p>Aucune course pour ces critères.<br>Vérifiez les filtres ou importez via <code>import_data.py predictions</code>.</p></div></div></div>
+{% endif %}
+{% endblock %}

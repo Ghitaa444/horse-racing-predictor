@@ -1,0 +1,140 @@
+{% extends "dashboard/base.html" %}
+{# djlint:off #}
+{% block title %}Métriques — SOREC{% endblock %}
+{% block topbar_title %}Métriques du modèle{% endblock %}
+
+{% block content %}
+<div class="ph">
+  <div class="ph-e"><div class="ph-l"></div><span class="ph-t">LightGBM</span></div>
+  <div class="ph-h">Performance & diagnostics du modèle</div>
+  <div class="ph-s">Évaluation sur données de test · split temporel 80/20 · sans fuite de données</div>
+</div>
+
+{% if latest %}
+<div class="kg">
+  <div class="kc" style="--ka:#B8960C;"><div class="kl">Top-1 Accuracy</div><div class="kn">{{ latest.top1_pct|floatformat:1 }}%</div><div class="ks">{{ latest.nb_courses }} courses</div></div>
+  <div class="kc" style="--ka:#1B3A5C;"><div class="kl">Top-3 Accuracy</div><div class="kn">{{ latest.top3_pct|floatformat:1 }}%</div><div class="ks">Vainqueur top 3</div></div>
+  <div class="kc" style="--ka:#2A5080;"><div class="kl">Top-5 Accuracy</div><div class="kn">{{ latest.top5_pct|floatformat:1 }}%</div><div class="ks">Vainqueur top 5</div></div>
+  <div class="kc" style="--ka:#111318;"><div class="kl">R²</div><div class="kn">{{ latest.r2|floatformat:4 }}</div><div class="ks">Détermination</div></div>
+  <div class="kc" style="--ka:#6B7280;"><div class="kl">RMSE</div><div class="kn" style="font-size:26px;">{{ latest.rmse|floatformat:4 }}</div><div class="ks">Erreur quadratique</div></div>
+  <div class="kc" style="--ka:#9CA3AF;"><div class="kl">MAE</div><div class="kn" style="font-size:26px;">{{ latest.mae|floatformat:4 }}</div><div class="ks">Erreur absolue</div></div>
+</div>
+
+{% if avg_metrics.avg_r2 %}
+<div class="pl" style="margin-bottom:16px;">
+  <div class="ph2"><div class="pt"><div class="ptb"></div><span class="ptt">Moyennes 30 jours</span></div></div>
+  <div class="pb">
+    <div style="display:flex;gap:36px;flex-wrap:wrap;">
+      {% if avg_metrics.avg_r2 %}<div><div style="font-size:8.5px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--ms);margin-bottom:3px;">R²</div><div style="font-family:var(--fd);font-size:22px;font-weight:700;color:var(--ink);">{{ avg_metrics.avg_r2|floatformat:3 }}</div></div>{% endif %}
+      {% if avg_metrics.avg_top1 %}<div><div style="font-size:8.5px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--ms);margin-bottom:3px;">Top-1</div><div style="font-family:var(--fd);font-size:22px;font-weight:700;color:var(--g);">{{ avg_metrics.avg_top1|floatformat:1 }}%</div></div>{% endif %}
+      {% if avg_metrics.avg_top3 %}<div><div style="font-size:8.5px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--ms);margin-bottom:3px;">Top-3</div><div style="font-family:var(--fd);font-size:22px;font-weight:700;color:var(--navy);">{{ avg_metrics.avg_top3|floatformat:1 }}%</div></div>{% endif %}
+      {% if avg_metrics.avg_winner %}<div><div style="font-size:8.5px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--ms);margin-bottom:3px;">Prob. vainqueur</div><div style="font-family:var(--fd);font-size:22px;font-weight:700;color:var(--st);">{{ avg_metrics.avg_winner|floatformat:1 }}%</div></div>{% endif %}
+    </div>
+  </div>
+</div>
+{% endif %}
+{% endif %}
+
+<div class="g2" style="margin-bottom:16px;">
+  <div class="pl">
+    <div class="ph2">
+      <div class="pt"><div class="ptb"></div><span class="ptt">Précision Top-N</span></div>
+      <div class="leg">
+        <span><span class="ld" style="background:#1B3A5C;"></span>Top-1</span>
+        <span><span class="ld" style="background:#B8960C;"></span>Top-3</span>
+        <span><span class="ld" style="background:#9CA3AF;border-top:1px dashed #9CA3AF;"></span>Top-5</span>
+      </div>
+    </div>
+    <div class="pb"><div class="cw" style="height:200px;"><canvas id="cTopN" role="img" aria-label="Historique précision Top-1 Top-3 Top-5 du modèle LightGBM"></canvas></div></div>
+  </div>
+  <div class="pl">
+    <div class="ph2">
+      <div class="pt"><div class="ptb"></div><span class="ptt">RMSE / MAE</span></div>
+      <div class="leg">
+        <span><span class="ld" style="background:#111318;"></span>RMSE</span>
+        <span><span class="ld" style="background:#9CA3AF;border-top:1px dashed #9CA3AF;"></span>MAE</span>
+      </div>
+    </div>
+    <div class="pb"><div class="cw" style="height:200px;"><canvas id="cErr" role="img" aria-label="Évolution des erreurs RMSE et MAE du modèle"></canvas></div></div>
+  </div>
+</div>
+
+<div class="g2" style="margin-bottom:16px;">
+  <div class="pl">
+    <div class="ph2">
+      <div class="pt"><div class="ptb"></div><span class="ptt">Probabilité vainqueur</span></div>
+      <span style="font-size:10.5px;color:var(--st);">Calibration softmax</span>
+    </div>
+    <div class="pb"><div class="cw" style="height:160px;"><canvas id="cWin" role="img" aria-label="Probabilité moyenne attribuée au vainqueur réel par le modèle"></canvas></div></div>
+  </div>
+  <div class="pl">
+    <div class="ph2">
+      <div class="pt"><div class="ptb"></div><span class="ptt">R² — historique</span></div>
+    </div>
+    <div class="pb"><div class="cw" style="height:160px;"><canvas id="cR2" role="img" aria-label="Évolution du coefficient de détermination R² du modèle"></canvas></div></div>
+  </div>
+</div>
+
+<div class="pl">
+  <div class="ph2"><div class="pt"><div class="ptb"></div><span class="ptt">Architecture du modèle</span></div></div>
+  <div class="pb">
+    <div class="ag">
+      {% for item in architecture %}
+      <div class="ac"><div class="acl">{{ item.label }}</div><div class="acv">{{ item.value }}</div><div class="acd">{{ item.desc }}</div></div>
+      {% endfor %}
+    </div>
+    <div style="font-size:8.5px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--ms);margin-bottom:8px;">Variables du modèle</div>
+    <div class="chips">{% for feat in features_list %}<span class="chip">{{ feat }}</span>{% endfor %}</div>
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+const raw  = {{ metrics_data|safe }};
+const lbl  = raw.map(m=>m.date_evaluation);
+const C    = SOREC; const tip = CHART_TIP;
+const grid = { color: C.grid };
+const tx   = { font:{family:"'Inter',sans-serif",size:11.5}, color:'#9CA3AF' };
+const base = { responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false},tooltip:{...tip}} };
+
+new Chart(document.getElementById('cTopN'),{
+  type:'line',
+  data:{ labels:lbl, datasets:[
+    { label:'Top-1', data:raw.map(m=>m.top1_pct), borderColor:C.navy,  backgroundColor:'rgba(27,58,92,.07)', fill:true,  tension:.38, pointRadius:3, borderWidth:2 },
+    { label:'Top-3', data:raw.map(m=>m.top3_pct), borderColor:C.gold,  fill:false, tension:.38, pointRadius:2.5, borderWidth:2 },
+    { label:'Top-5', data:raw.map(m=>m.top5_pct), borderColor:C.ms,    fill:false, tension:.38, pointRadius:2,   borderWidth:1.5, borderDash:[5,3] },
+  ]},
+  options:{...base, scales:{ x:{grid,ticks:{...tx,maxTicksLimit:8}}, y:{grid,min:0,max:100,ticks:{...tx,callback:v=>v+'%'}} }}
+});
+
+new Chart(document.getElementById('cErr'),{
+  type:'line',
+  data:{ labels:lbl, datasets:[
+    { label:'RMSE', data:raw.map(m=>m.rmse), borderColor:C.ink, backgroundColor:'rgba(17,19,24,.04)', fill:true, tension:.38, pointRadius:2.5, borderWidth:2 },
+    { label:'MAE',  data:raw.map(m=>m.mae),  borderColor:C.ms,  fill:false, tension:.38, pointRadius:2, borderWidth:1.5, borderDash:[5,3] },
+  ]},
+  options:{...base, scales:{ x:{grid,ticks:{...tx,maxTicksLimit:8}}, y:{grid,ticks:{...tx,callback:v=>v.toFixed(3)}} }}
+});
+
+new Chart(document.getElementById('cWin'),{
+  type:'bar',
+  data:{ labels:lbl, datasets:[{
+    label:'Prob.', data:raw.map(m=>m.avg_winner_prob),
+    backgroundColor:'rgba(27,58,92,.5)', borderColor:C.navy, borderWidth:1, borderRadius:0,
+  }]},
+  options:{...base, scales:{ x:{grid,ticks:{...tx,maxTicksLimit:10}}, y:{grid,ticks:{...tx,callback:v=>v+'%'}} },
+    plugins:{...base.plugins, tooltip:{...tip,callbacks:{label:c=>` ${c.parsed.y?.toFixed(1)}%`}}}
+  }
+});
+
+new Chart(document.getElementById('cR2'),{
+  type:'line',
+  data:{ labels:lbl, datasets:[{
+    label:'R²', data:raw.map(m=>m.r2),
+    borderColor:C.gold, backgroundColor:'rgba(184,150,12,.06)', fill:true, tension:.38, pointRadius:3, borderWidth:2,
+  }]},
+  options:{...base, scales:{ x:{grid,ticks:{...tx,maxTicksLimit:8}}, y:{grid,min:0,max:1,ticks:{...tx,callback:v=>v.toFixed(2)}} }}
+});
+</script>
+{% endblock %}

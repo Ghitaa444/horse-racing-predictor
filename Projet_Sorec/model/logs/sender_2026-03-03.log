@@ -1,0 +1,178 @@
+
+Mode détection activé
+
+Recherche des fichiers...
+Date cible (courses): 04/03/2026 (demain)
+Date historique (résultats): 02/03/2026 (veille)
+data/new_races/cours04032026.*
+data/new_races/course04032026.*
+data/new_races/courses_04032026.*
+data/new_races/*04032026*cours*.*
+data/new_races/*04032026*course*.*
+data/new_races/cours04_03_2026.*
+data/new_races/course04_03_2026.*
+data/new_races/courses_04_03_2026.*
+data/new_races/*04_03_2026*cours*.*
+data/new_races/*04_03_2026*course*.*
+data/new_races/cours20260304.*
+data/new_races/course20260304.*
+data/new_races/courses_20260304.*
+data/new_races/*20260304*cours*.*
+data/new_races/*20260304*course*.*
+data/new_races/cours2026_03_04.*
+data/new_races/course2026_03_04.*
+data/new_races/courses_2026_03_04.*
+data/new_races/*2026_03_04*cours*.*
+data/new_races/*2026_03_04*course*.*
+data/new_races/cours04-03-2026.*
+data/new_races/course04-03-2026.*
+data/new_races/courses_04-03-2026.*
+data/new_races/*04-03-2026*cours*.*
+data/new_races/*04-03-2026*course*.*
+data/new_races/cours2026-03-04.*
+data/new_races/course2026-03-04.*
+data/new_races/courses_2026-03-04.*
+data/new_races/*2026-03-04*cours*.*
+data/new_races/*2026-03-04*course*.*
+Fichiers courses trouvés: 1
+  - course04032026.CSV
+Aucun fichier de résultats de la veille trouvé
+
+Recherche par pattern de fichiers récents...
+Aucun fichier test trouvé
+Aucun fichier hist trouvé
+Aucun fichier hist_base trouvé
+
+Fichiers utilisés:
+  Base historique: data/dataset.xlsx
+  Résultats aujourd'hui: (aucun fichier - utilisation base seule)
+  Courses de demain: data/new-races/course04032026.CSV
+
+Aucun fichier de résultats récents - utilisation de la base historique seule
+
+====== HorseRacingSender adapté ======
+Date d'exécution: 2026-03-03 11:44:02
+Modèle et méta chargés — features attendues : 57
+Paramètres: SOFTMAX_EXP=8, MIN_PCT=0.4
+Colonnes disponibles dans le fichier de test:
+  0: id_course
+  1: hip
+  2: ID_SOCIETE_COURSE
+  3: date_course
+  4: CODE_CATEGORISATION_COURSE
+  5: CODE_CATEGORIE_COURSE
+  6: CODE_AGE_CHEVAL
+  7: CODE_CRITERE_SEXE
+  8: CODE_ORIGINE_CHEVAL
+  9: CODE_RACE_CHEVAL
+  10: CODE_CLASSIFICATION_COURSE
+  11: CODE_DISTANCE_COURSE
+  12: ID_CHEVAL
+  13: ID_JOCKEY
+  14: ID_PROPRIETAIRE
+  15: ID_ENTRAINEUR
+  16: ID_NAISSEUR
+  17: NUMERO_PMU_SEC
+  18: CORDE_SEC
+  19: VH
+  20: POIDS_CALCULE
+  21: CODE_TYPE_OEILLERE
+  22: NOM
+  23: NOM_MERE
+  24: NOM_PERE
+  25: NOM_GRAND_PERE
+  26: NUM_COURSE
+Colonne DATE_COURSE convertie en datetime
+Données chargées : 130,177 historiques + 85 test → 130,262
+Identifiants de courses identifiés: 8 courses uniques
+Feature engineering terminé - 94 colonnes disponibles
+Prédictions générées pour 130262 lignes
+Calcul des probabilités avec SOFTMAX_EXP=8
+
+Distribution des probabilités pour course 83398:
+  1. Prob: 6.18%
+  2. Prob: 6.17%
+  3. Prob: 6.14%
+  4. Prob: 6.12%
+  5. Prob: 6.06%
+
+Distribution des probabilités pour course 83775:
+  1. Prob: 6.90%
+  2. Prob: 6.71%
+  3. Prob: 6.70%
+  4. Prob: 6.70%
+  5. Prob: 6.65%
+
+Distribution des probabilités pour course 84277:
+  1. Prob: 8.84%
+  2. Prob: 7.49%
+  3. Prob: 7.46%
+  4. Prob: 7.25%
+  5. Prob: 7.25%
+
+Ajustement des cotes selon la nouvelle règle...
+
+Course 83398 - Ajustement de cotes:
+  Favori: cote originale 16.19 → nouvelle cote 1.10
+  Delta appliqué aux autres partants: 15.09
+  Cheval 2: cote originale 16.22 → nouvelle cote 1.20
+  Cheval 3: cote originale 16.28 → nouvelle cote 1.20
+  Cheval 4: cote originale 16.33 → nouvelle cote 1.24
+
+Course 83775 - Ajustement de cotes:
+  Favori: cote originale 14.49 → nouvelle cote 1.10
+  Delta appliqué aux autres partants: 13.39
+  Cheval 2: cote originale 14.91 → nouvelle cote 1.52
+  Cheval 3: cote originale 14.92 → nouvelle cote 1.53
+  Cheval 4: cote originale 14.93 → nouvelle cote 1.54
+
+Course 84277 - Ajustement de cotes:
+  Favori: cote originale 11.31 → nouvelle cote 1.10
+  Delta appliqué aux autres partants: 10.21
+  Cheval 2: cote originale 13.34 → nouvelle cote 3.13
+  Cheval 3: cote originale 13.40 → nouvelle cote 3.19
+  Cheval 4: cote originale 13.78 → nouvelle cote 3.57
+Cotes ajustées pour 11320 courses
+
+Distribution des cotes ajustées pour course 83398:
+  1. Prob: 6.18% -> Cote ajustée: 1.10
+  2. Prob: 6.17% -> Cote ajustée: 1.20
+  3. Prob: 6.14% -> Cote ajustée: 1.20
+  4. Prob: 6.12% -> Cote ajustée: 1.24
+  5. Prob: 6.06% -> Cote ajustée: 1.40
+
+Distribution des cotes ajustées pour course 83775:
+  1. Prob: 6.90% -> Cote ajustée: 1.10
+  2. Prob: 6.71% -> Cote ajustée: 1.52
+  3. Prob: 6.70% -> Cote ajustée: 1.53
+  4. Prob: 6.70% -> Cote ajustée: 1.54
+  5. Prob: 6.65% -> Cote ajustée: 1.64
+
+Distribution des cotes ajustées pour course 84277:
+  1. Prob: 8.84% -> Cote ajustée: 1.10
+  2. Prob: 7.49% -> Cote ajustée: 3.13
+  3. Prob: 7.46% -> Cote ajustée: 3.19
+  4. Prob: 7.25% -> Cote ajustée: 3.57
+  5. Prob: 7.25% -> Cote ajustée: 3.58
+Format de date correctement formaté
+Version française exportée: predictions_04_03_2026_fr.xlsx
+English version exported: predictions_04_03_2026_en.xlsx
+Détails des prédictions exportés: predictions_04_03_2026_details.xlsx
+
+Analyse des prédictions:
+Course 190039 - Top 3 probabilités: 8.72%, 8.01%, 7.92%
+Course 190040 - Top 3 probabilités: 21.89%, 7.97%, 7.16%
+Course 190041 - Top 3 probabilités: 48.03%, 11.12%, 11.03%
+Course 190042 - Top 3 probabilités: 22.33%, 20.46%, 19.86%
+Course 190043 - Top 3 probabilités: 19.04%, 18.55%, 8.83%
+Course 190044 - Top 3 probabilités: 15.42%, 15.31%, 14.59%
+Course 190045 - Top 3 probabilités: 9.71%, 9.67%, 8.02%
+Course 190046 - Top 3 probabilités: 11.84%, 11.79%, 11.50%
+Email envoyé à 7 destinataire(s): supgam@sorec.ma, exploitation@sorec.ma, programmes@sorec.ma, crc@sorec.ma, HBENABDESSELAM@sorec.ma, hasrar@sorec.ma, jfoudsi@sorec.ma avec 3 pièce(s) jointe(s)
+
+=======================================
+
+Prédictions générées avec succès:
+   predictions_04_03_2026_fr.xlsx
+   predictions_04_03_2026_en.xlsx
+   predictions_04_03_2026_details.xlsx

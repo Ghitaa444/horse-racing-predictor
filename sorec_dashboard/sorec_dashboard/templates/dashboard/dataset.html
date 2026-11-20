@@ -1,0 +1,127 @@
+{% extends "dashboard/base.html" %}
+{# djlint:off #}
+{% block title %}Dataset — SOREC{% endblock %}
+{% block topbar_title %}Dataset{% endblock %}
+
+{% block content %}
+<div class="ph">
+  <div class="ph-e"><div class="ph-l"></div><span class="ph-t">Données</span></div>
+  <div class="ph-h">Master Dataset SOREC</div>
+  <div class="ph-s">Historique complet des courses hippiques · {% if dates.min_date %}{{ dates.min_date|date:"d/m/Y" }} → {{ dates.max_date|date:"d/m/Y" }}{% endif %}</div>
+</div>
+
+<!-- KPIs -->
+<div class="kg">
+  <div class="kc" style="--ka:#B8960C;">
+    <div class="kl">Courses uniques</div>
+    <div class="kn">{{ total_courses }}</div>
+    <div class="ks">ID_PV_COURSE distincts</div>
+  </div>
+  <div class="kc" style="--ka:#1B3A5C;">
+    <div class="kl">Chevaux uniques</div>
+    <div class="kn">{{ total_chevaux }}</div>
+    <div class="ks">ID_CHEVAL distincts</div>
+  </div>
+  <div class="kc" style="--ka:#111318;">
+    <div class="kl">Participations</div>
+    <div class="kn">{{ total_parts }}</div>
+    <div class="ks">Lignes dans la base</div>
+  </div>
+  <div class="kc" style="--ka:#166534;">
+    <div class="kl">Avec résultat réel</div>
+    <div class="kn">{{ avec_reel }}</div>
+    <div class="ks">Place réelle connue</div>
+  </div>
+  <div class="kc" style="--ka:#2A5080;">
+    <div class="kl">Avec prédiction</div>
+    <div class="kn">{{ avec_pred }}</div>
+    <div class="ks">Probabilité calculée</div>
+  </div>
+  <div class="kc" style="--ka:#9CA3AF;">
+    <div class="kl">Période couverte</div>
+    <div class="kn" style="font-size:18px;">{% if dates.min_date %}{{ dates.min_date|date:"Y" }} – {{ dates.max_date|date:"Y" }}{% else %}—{% endif %}</div>
+    <div class="ks">Années de données</div>
+  </div>
+</div>
+
+<div class="g2" style="margin-bottom:16px;">
+
+  <!-- Courses par hippodrome -->
+  <div class="pl">
+    <div class="ph2"><div class="pt"><div class="ptb"></div><span class="ptt">Courses par hippodrome</span></div></div>
+    <div class="pb0">
+      <table class="dt">
+        <thead><tr><th>Hippodrome</th><th>Nb courses</th><th>Part</th></tr></thead>
+        <tbody>
+          {% for h in par_hippodrome %}
+          <tr>
+            <td><span style="font-weight:600;color:var(--ink);">{{ h.code_hippodrome }}</span></td>
+            <td><span style="font-family:var(--fm);font-size:12px;">{{ h.nb }}</span></td>
+            <td>
+              <div style="display:flex;align-items:center;gap:8px;">
+                <div style="flex:1;height:2px;background:var(--sm);">
+                  <div style="height:100%;background:var(--navy);width:{% widthratio h.nb total_courses 100 %}%;"></div>
+                </div>
+                <span style="font-family:var(--fm);font-size:10.5px;color:var(--st);">{% widthratio h.nb total_courses 100 %}%</span>
+              </div>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Graphique par mois -->
+  <div class="pl">
+    <div class="ph2"><div class="pt"><div class="ptb"></div><span class="ptt">Courses par mois</span></div></div>
+    <div class="pb"><div class="cw" style="height:260px;"><canvas id="chMois" role="img" aria-label="Nombre de courses par mois"></canvas></div></div>
+  </div>
+
+</div>
+
+<!-- Infos fichiers -->
+<div class="pl">
+  <div class="ph2"><div class="pt"><div class="ptb"></div><span class="ptt">Fichiers du dataset</span></div></div>
+  <div class="pb0">
+    <table class="dt">
+      <thead><tr><th>Fichier</th><th>Emplacement</th><th>Description</th></tr></thead>
+      <tbody>
+        <tr><td><span style="font-family:var(--fm);font-size:12px;">dataset.csv</span></td><td style="color:var(--st);">data/</td><td>Master Dataset — lecture rapide, prioritaire pour le modèle</td></tr>
+        <tr><td><span style="font-family:var(--fm);font-size:12px;">dataset.xlsx</span></td><td style="color:var(--st);">data/</td><td>Master Dataset — format Excel, fallback</td></tr>
+        <tr><td><span style="font-family:var(--fm);font-size:12px;">Resultat_course*.xlsx</span></td><td style="color:var(--st);">data/old-races-results/</td><td>Nouveaux résultats à intégrer par maintenance_data.py</td></tr>
+        <tr><td><span style="font-family:var(--fm);font-size:12px;">Resultat_course*.xlsx</span></td><td style="color:var(--st);">data/results-treated/</td><td>Fichiers déjà traités et archivés</td></tr>
+        <tr><td><span style="font-family:var(--fm);font-size:12px;">dataset_backup_*.xlsx</span></td><td style="color:var(--st);">data/backups/</td><td>Sauvegardes automatiques horodatées (5 dernières)</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+const raw = {{ par_mois|safe }};
+const C = SOREC; const tip = CHART_TIP;
+const grid = { color: C.grid };
+
+new Chart(document.getElementById('chMois'), {
+  type: 'bar',
+  data: {
+    labels: raw.map(m => m.mois ? m.mois.substring(0,7) : ''),
+    datasets: [{
+      label: 'Courses', data: raw.map(m => m.nb),
+      backgroundColor: 'rgba(27,58,92,.55)', borderColor: C.navy,
+      borderWidth: 1, borderRadius: 0,
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend:{display:false}, tooltip:{...tip} },
+    scales: {
+      x: { grid, ticks:{ font:{family:"'Inter',sans-serif",size:10.5}, color:'#9CA3AF', maxTicksLimit:12 } },
+      y: { grid, ticks:{ font:{family:"'Inter',sans-serif",size:10.5}, color:'#9CA3AF' } }
+    }
+  }
+});
+</script>
+{% endblock %}

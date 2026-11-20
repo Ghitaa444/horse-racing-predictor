@@ -1,0 +1,17 @@
+[15:06:35] INFO - ============================================================
+[15:06:35] INFO -  RETRAINING HEBDOMADAIRE - 09/06/2026 15:06
+[15:06:35] INFO - ============================================================
+[15:06:35] INFO - Chargement du dataset : C:\Users\GELFINOU\Desktop\Projet_Sorec\data\dataset.csv
+[15:06:36] INFO - Brut : 175,603 lignes en 0.9s
+[15:06:37] INFO - Après filtrage PLACE : 149,854 lignes
+[15:06:37] INFO - Période : 2021-01-13 → 2026-06-04
+[15:06:37] INFO - Split : train=119,877 lignes (avant 2025-03-01) | test=29,977 lignes
+[15:06:37] INFO - Prétraitement train...
+[15:06:37] INFO - Feature engineering en cours...
+[15:10:17] INFO - Feature engineering terminé — 98 colonnes disponibles
+[15:10:17] INFO - Prétraitement test...
+[15:10:17] INFO - Feature engineering en cours...
+[15:11:17] INFO - Feature engineering terminé — 98 colonnes disponibles
+[15:11:17] INFO - Features sélectionnées : 61 (3 catégorielles)
+[15:11:17] INFO - Hyperparamètres de la semaine précédente chargés comme point de départ.
+[15:11:17] INFO - Recherche Optuna (50 trials)...

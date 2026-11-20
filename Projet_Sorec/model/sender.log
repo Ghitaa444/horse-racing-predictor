@@ -1,0 +1,14 @@
+import logging
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+log_path = os.path.join(script_dir, "sender.log")
+
+# Configuration du logging
+logging.basicConfig(
+    filename=log_path,
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    filemode='a' # 'a' pour ajouter à la suite, 'w' pour écraser à chaque fois
+)
+
+logging.info("Démarrage du script de prédiction SOREC")

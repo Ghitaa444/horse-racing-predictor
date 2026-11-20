@@ -1,0 +1,179 @@
+
+Mode détection activé
+
+Recherche des fichiers...
+Date cible (courses): 14/02/2026 (demain)
+Date historique (résultats): 12/02/2026 (veille)
+data/new_races/cours14022026.*
+data/new_races/course14022026.*
+data/new_races/courses_14022026.*
+data/new_races/*14022026*cours*.*
+data/new_races/*14022026*course*.*
+data/new_races/cours14_02_2026.*
+data/new_races/course14_02_2026.*
+data/new_races/courses_14_02_2026.*
+data/new_races/*14_02_2026*cours*.*
+data/new_races/*14_02_2026*course*.*
+data/new_races/cours20260214.*
+data/new_races/course20260214.*
+data/new_races/courses_20260214.*
+data/new_races/*20260214*cours*.*
+data/new_races/*20260214*course*.*
+data/new_races/cours2026_02_14.*
+data/new_races/course2026_02_14.*
+data/new_races/courses_2026_02_14.*
+data/new_races/*2026_02_14*cours*.*
+data/new_races/*2026_02_14*course*.*
+data/new_races/cours14-02-2026.*
+data/new_races/course14-02-2026.*
+data/new_races/courses_14-02-2026.*
+data/new_races/*14-02-2026*cours*.*
+data/new_races/*14-02-2026*course*.*
+data/new_races/cours2026-02-14.*
+data/new_races/course2026-02-14.*
+data/new_races/courses_2026-02-14.*
+data/new_races/*2026-02-14*cours*.*
+data/new_races/*2026-02-14*course*.*
+Fichiers courses trouvés: 1
+  - course14022026.CSV
+Aucun fichier de résultats de la veille trouvé
+
+Recherche par pattern de fichiers récents...
+Aucun fichier test trouvé
+Aucun fichier hist trouvé
+Aucun fichier hist_base trouvé
+
+Fichiers utilisés:
+  Base historique: data/dataset.xlsx
+  Résultats aujourd'hui: (aucun fichier - utilisation base seule)
+  Courses de demain: data/new-races/course14022026.CSV
+
+Aucun fichier de résultats récents - utilisation de la base historique seule
+
+====== HorseRacingSender adapté ======
+Date d'exécution: 2026-02-13 11:44:04
+Modèle et méta chargés — features attendues : 57
+Paramètres: SOFTMAX_EXP=8, MIN_PCT=0.4
+Colonnes disponibles dans le fichier de test:
+  0: id_course
+  1: hip
+  2: ID_SOCIETE_COURSE
+  3: date_course
+  4: CODE_CATEGORISATION_COURSE
+  5: CODE_CATEGORIE_COURSE
+  6: CODE_AGE_CHEVAL
+  7: CODE_CRITERE_SEXE
+  8: CODE_ORIGINE_CHEVAL
+  9: CODE_RACE_CHEVAL
+  10: CODE_CLASSIFICATION_COURSE
+  11: CODE_DISTANCE_COURSE
+  12: ID_CHEVAL
+  13: ID_JOCKEY
+  14: ID_PROPRIETAIRE
+  15: ID_ENTRAINEUR
+  16: ID_NAISSEUR
+  17: NUMERO_PMU_SEC
+  18: CORDE_SEC
+  19: VH
+  20: POIDS_CALCULE
+  21: CODE_TYPE_OEILLERE
+  22: NOM
+  23: NOM_MERE
+  24: NOM_PERE
+  25: NOM_GRAND_PERE
+  26: NUM_COURSE
+Colonne DATE_COURSE convertie en datetime
+Données chargées : 130,177 historiques + 119 test → 130,296
+Identifiants de courses identifiés: 9 courses uniques
+Feature engineering terminé - 94 colonnes disponibles
+Prédictions générées pour 130296 lignes
+Calcul des probabilités avec SOFTMAX_EXP=8
+
+Distribution des probabilités pour course 83398:
+  1. Prob: 6.15%
+  2. Prob: 6.14%
+  3. Prob: 6.12%
+  4. Prob: 6.10%
+  5. Prob: 6.04%
+
+Distribution des probabilités pour course 83775:
+  1. Prob: 6.90%
+  2. Prob: 6.70%
+  3. Prob: 6.70%
+  4. Prob: 6.69%
+  5. Prob: 6.65%
+
+Distribution des probabilités pour course 84277:
+  1. Prob: 8.84%
+  2. Prob: 7.50%
+  3. Prob: 7.44%
+  4. Prob: 7.26%
+  5. Prob: 7.25%
+
+Ajustement des cotes selon la nouvelle règle...
+
+Course 83398 - Ajustement de cotes:
+  Favori: cote originale 16.26 → nouvelle cote 1.10
+  Delta appliqué aux autres partants: 15.16
+  Cheval 2: cote originale 16.29 → nouvelle cote 1.20
+  Cheval 3: cote originale 16.35 → nouvelle cote 1.20
+  Cheval 4: cote originale 16.40 → nouvelle cote 1.24
+
+Course 83775 - Ajustement de cotes:
+  Favori: cote originale 14.50 → nouvelle cote 1.10
+  Delta appliqué aux autres partants: 13.40
+  Cheval 2: cote originale 14.93 → nouvelle cote 1.53
+  Cheval 3: cote originale 14.93 → nouvelle cote 1.53
+  Cheval 4: cote originale 14.95 → nouvelle cote 1.55
+
+Course 84277 - Ajustement de cotes:
+  Favori: cote originale 11.31 → nouvelle cote 1.10
+  Delta appliqué aux autres partants: 10.21
+  Cheval 2: cote originale 13.34 → nouvelle cote 3.13
+  Cheval 3: cote originale 13.44 → nouvelle cote 3.23
+  Cheval 4: cote originale 13.78 → nouvelle cote 3.57
+Cotes ajustées pour 11321 courses
+
+Distribution des cotes ajustées pour course 83398:
+  1. Prob: 6.15% -> Cote ajustée: 1.10
+  2. Prob: 6.14% -> Cote ajustée: 1.20
+  3. Prob: 6.12% -> Cote ajustée: 1.20
+  4. Prob: 6.10% -> Cote ajustée: 1.24
+  5. Prob: 6.04% -> Cote ajustée: 1.40
+
+Distribution des cotes ajustées pour course 83775:
+  1. Prob: 6.90% -> Cote ajustée: 1.10
+  2. Prob: 6.70% -> Cote ajustée: 1.53
+  3. Prob: 6.70% -> Cote ajustée: 1.53
+  4. Prob: 6.69% -> Cote ajustée: 1.55
+  5. Prob: 6.65% -> Cote ajustée: 1.64
+
+Distribution des cotes ajustées pour course 84277:
+  1. Prob: 8.84% -> Cote ajustée: 1.10
+  2. Prob: 7.50% -> Cote ajustée: 3.13
+  3. Prob: 7.44% -> Cote ajustée: 3.23
+  4. Prob: 7.26% -> Cote ajustée: 3.57
+  5. Prob: 7.25% -> Cote ajustée: 3.58
+Format de date correctement formaté
+Version française exportée: predictions_14_02_2026_fr.xlsx
+English version exported: predictions_14_02_2026_en.xlsx
+Détails des prédictions exportés: predictions_14_02_2026_details.xlsx
+
+Analyse des prédictions:
+Course 188850 - Top 3 probabilités: 10.63%, 8.16%, 6.78%
+Course 189727 - Top 3 probabilités: 12.20%, 11.90%, 11.71%
+Course 189728 - Top 3 probabilités: 36.85%, 18.07%, 12.18%
+Course 189729 - Top 3 probabilités: 19.18%, 15.17%, 9.67%
+Course 189730 - Top 3 probabilités: 26.16%, 10.90%, 5.59%
+Course 189731 - Top 3 probabilités: 15.72%, 14.87%, 14.51%
+Course 189732 - Top 3 probabilités: 28.69%, 10.44%, 9.84%
+Course 189733 - Top 3 probabilités: 38.74%, 9.69%, 5.78%
+Course 189734 - Top 3 probabilités: 25.27%, 16.46%, 6.39%
+Email envoyé à 7 destinataire(s): supgam@sorec.ma, exploitation@sorec.ma, programmes@sorec.ma, crc@sorec.ma, HBENABDESSELAM@sorec.ma, hasrar@sorec.ma, jfoudsi@sorec.ma avec 3 pièce(s) jointe(s)
+
+=======================================
+
+Prédictions générées avec succès:
+   predictions_14_02_2026_fr.xlsx
+   predictions_14_02_2026_en.xlsx
+   predictions_14_02_2026_details.xlsx
