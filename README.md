@@ -494,7 +494,7 @@ Potential extensions to the platform include:
 
 **Ghita EL Finou**
 
-Data Engineering & AI Bachelor Student (IDIA)  
+Data Engineering & AI Bachelor Student  
 École Supérieure de Technologie – Béni Mellal (EST Béni Mellal), Morocco.
 
 **Areas of Interest:**
